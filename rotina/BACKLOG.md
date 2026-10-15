@@ -1,0 +1,12 @@
+# Backlog (prioridade de cima para baixo)
+- [ ] Auditar `index.html`: mapear segmentos, estruturas, campos e frases existentes (gerar `docs/MAPA_DO_APP.md`)
+- [ ] Checklist de varredura padrão por segmento (rotina de exame)
+- [ ] Impressão diagnóstica automática coerente com os achados marcados
+- [ ] Classificações usuais por estrutura (ex.: manguito rotador, tendinopatias, meniscos, ligamentos)
+- [ ] Campo de comparação com exame anterior
+- [ ] Exportar laudo em PDF/Word com cabeçalho do serviço
+- [ ] Busca rápida de achados/frases
+- [ ] Modo celular/tablet e impressão otimizada
+- [ ] Biblioteca de armadilhas técnicas e variantes anatômicas
+- [ ] Glossário e tabela de valores de referência com fonte
+- [ ] Guia de ultrassom intervencionista (guiado por imagem): checklist de segurança
