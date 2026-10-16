@@ -125,6 +125,10 @@ button{font:inherit;cursor:pointer}
   color:var(--green);text-decoration:underline;text-underline-offset:3px}
 
 /* impressão */
+.comp{padding:14px 20px 4px;border-top:1px solid var(--rule)}
+.comp textarea{width:100%;margin-top:9px;font:inherit;font-size:13px;padding:8px 10px;
+  border:1px solid var(--rule-strong);border-radius:3px;min-height:54px;resize:vertical}
+.comp .fields{margin-top:6px}
 .impr{padding:14px 20px 20px;border-top:1px solid var(--rule)}
 .impr textarea{width:100%;margin-top:9px;font:inherit;font-size:13px;padding:8px 10px;
   border:1px solid var(--rule-strong);border-radius:3px;resize:vertical;min-height:56px}
@@ -228,6 +232,18 @@ button{font:inherit;cursor:pointer}
     </div>
     <div id="itens"></div>
     <div id="extras"></div>
+    <div class="comp" id="compBox">
+      <div class="grouphead" style="padding:0 0 6px;border:0">Comparação com exame anterior</div>
+      <div class="fields">
+        <span class="slab">exame de</span>
+        <input id="compDt" type="date" class="fld wide" style="min-width:140px" aria-label="Data do exame anterior">
+        <span class="slab">modalidade</span>
+        <input id="compMod" class="fld wide" list="compModLista" placeholder="ex.: USG" aria-label="Modalidade do exame anterior" autocomplete="off">
+        <datalist id="compModLista"><option value="USG"><option value="RM"><option value="Radiografia"><option value="TC"></datalist>
+      </div>
+      <div class="fields" id="compChips"></div>
+      <textarea id="compTxt" placeholder="Descrever a evolução em relação ao exame anterior (opcional; não entra no laudo se ficar em branco)."></textarea>
+    </div>
     <div class="impr">
       <div class="grouphead" style="padding:0 0 6px;border:0;display:flex;
         justify-content:space-between;align-items:baseline">
@@ -275,6 +291,7 @@ button{font:inherit;cursor:pointer}
               <div class="lbl">Relatório</div>
               <div id="oRel"></div>
               <div id="oObs"></div>
+              <div class="impr-out" id="oCompBox" style="display:none"><div class="lbl">Comparação</div><div id="oComp"></div></div>
               <div class="impr-out"><div class="lbl">Impressão</div><div id="oImp"></div></div>
             </div>
           </td></tr></tbody>
@@ -467,6 +484,9 @@ function gruposLivres() {
   return seg().grupos.map((g, gi) => ({ g, gi })).filter(o => !ligacoes(o.gi).length);
 }
 
+/* identificação do paciente: vale para todos os segmentos/modelos da sessão (só em memória) */
+const ident = { pac: "", dt: "", sol: "" };
+
 function estado() {
   const k = chave();
   if (!store[k]) {
@@ -474,7 +494,8 @@ function estado() {
       itens: linhas(mod()).map(() => ({ normal: true, sel: [], prev: [], livres: [], aberto: false })),
       slots: {}, med: {}, fill: {}, editando: {},
       extras: [], livresExtra: [],
-      imprLivre: "", imprManual: null, pac: "", dt: "", sol: "",
+      imprLivre: "", imprManual: null,
+      comp: { dt: "", mod: "", txt: "" },
       lado: seg().fem ? "ESQUERDA" : "ESQUERDO"
     };
   }
@@ -508,7 +529,9 @@ function montarBarra() {
     const o = el("option", null, v); o.value = v; lado.appendChild(o);
   });
   lado.value = s.lado;
-  pac.value = s.pac; dt.value = s.dt; sol.value = s.sol; imprLivre.value = s.imprLivre;
+  pac.value = ident.pac; dt.value = ident.dt; sol.value = ident.sol; imprLivre.value = s.imprLivre;
+  compDt.value = s.comp.dt; compMod.value = s.comp.mod; compTxt.value = s.comp.txt;
+  montarChipsComp();
 }
 const seg_ = $("#seg"), mod_ = $("#mod");
 
@@ -704,9 +727,9 @@ function linha(n, t, mudou) {
 
 function render() {
   const s = estado(), m = mod(), ls = linhas(m);
-  oPac.textContent = s.pac;
-  oDt.textContent = s.dt ? s.dt.split("-").reverse().join("/") : "";
-  oSol.textContent = s.sol;
+  oPac.textContent = ident.pac;
+  oDt.textContent = ident.dt ? ident.dt.split("-").reverse().join("/") : "";
+  oSol.textContent = ident.sol;
   oTtl.textContent = seg().titulo + " " + s.lado;
   oRel.innerHTML = ""; oImp.innerHTML = ""; oObs.innerHTML = "";
 
@@ -735,6 +758,9 @@ function render() {
   if (seg().obs) {
     const o = el("div", "obs"); o.append(el("b", null, "Obs.  "), seg().obs); oObs.appendChild(o);
   }
+  const tc = textoComparacao();
+  oCompBox.style.display = tc.length ? "" : "none"; oComp.innerHTML = "";
+  tc.forEach(t => oComp.appendChild(linha("", t, false)));
   const imp = s.imprManual === null ? conclusoes()
             : s.imprManual.split("\n").map(t => t.trim()).filter(Boolean);
   imp.forEach((t, i) => oImp.appendChild(linha(imp.length > 1 ? (i + 1) + "." : "", t, false)));
@@ -757,7 +783,39 @@ seg_.onchange = () => { si = +seg_.value; mi = 0; montarBarra(); montarConsole()
 mod_.onchange = () => { mi = +mod_.value; montarConsole(); render(); };
 lado.onchange = () => { estado().lado = lado.value; montarConsole(); render(); };
 [["pac", "pac"], ["dt", "dt"], ["sol", "sol"]].forEach(([id, k]) =>
-  $("#" + id).oninput = e => { estado()[k] = e.target.value; render(); });
+  $("#" + id).oninput = e => { ident[k] = e.target.value; render(); });
+
+/* ─────────── comparação com exame anterior ─────────── */
+const FRASES_COMP = [
+  ["sem exame anterior", "Não há exame anterior disponível para comparação."],
+  ["sem alterações", "Sem alterações significativas em relação ao exame anterior."],
+  ["melhora", "Evolução favorável em relação ao exame anterior."],
+  ["piora", "Evolução desfavorável em relação ao exame anterior."]
+];
+function montarChipsComp() {
+  compChips.innerHTML = "";
+  compChips.appendChild(el("span", "slab", "frase rápida"));
+  FRASES_COMP.forEach(([rot, frase]) => {
+    const ch = el("button", "chip", rot); ch.type = "button";
+    ch.onclick = () => {
+      const s = estado(), t = s.comp.txt.trim();
+      s.comp.txt = t ? t + " " + frase : frase;
+      compTxt.value = s.comp.txt; render();
+    };
+    compChips.appendChild(ch);
+  });
+}
+/* linha(s) de comparação para a folha; vazio se nada foi preenchido */
+function textoComparacao() {
+  const c = estado().comp, t = c.txt.trim();
+  if (!t) return [];
+  const ref = [c.mod.trim(), c.dt ? "de " + c.dt.split("-").reverse().join("/") : ""]
+    .filter(Boolean).join(" ");
+  return [(ref ? "Exame anterior: " + ref + ". " : "") + t];
+}
+compDt.oninput = e => { estado().comp.dt = e.target.value; render(); };
+compMod.oninput = e => { estado().comp.mod = e.target.value; render(); };
+compTxt.oninput = e => { estado().comp.txt = e.target.value; render(); };
 imprLivre.oninput = e => { estado().imprLivre = e.target.value; montarConsole(); render(); };
 imprManual.oninput = e => { estado().imprManual = e.target.value; render(); };
 btnManual.onclick = () => {
