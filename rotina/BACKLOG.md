@@ -12,3 +12,6 @@
 - [ ] Guia de ultrassom intervencionista (guiado por imagem): checklist de segurança
 - [ ] Opção de lateralidade "bilateral" (novo, da auditoria)
 - [ ] Revisar achados sem `dx` (Cotovelo, Punho, Coxa, Perna, Panturrilha) — intencional? (novo, da auditoria)
+- [ ] Decidir limiares de referência do serviço (mediano/ulnar/fáscia plantar/quadril) com o Dr. Ian — ver PENDENTE_REVISAO (novo, 17/10)
+- [ ] Remover cópia antiga duplicada em `laudos-usg-musculoesqueletico/` (novo, 17/10)
+- [x] (17/10/2026) Revisão ortográfica/terminológica geral e conferência dos valores de referência
