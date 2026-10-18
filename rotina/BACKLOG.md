@@ -4,7 +4,7 @@
 - [ ] Impressão diagnóstica automática coerente com os achados marcados
 - [ ] Classificações usuais por estrutura (ex.: manguito rotador, tendinopatias, meniscos, ligamentos)
 - [x] (16/10/2026) Campo de comparação com exame anterior
-- [ ] Exportar laudo em PDF/Word com cabeçalho do serviço
+- [~] Exportar laudo em PDF/Word com cabeçalho do serviço (seletor de cabeçalho pronto em 18/10; falta exportação Word)
 - [ ] Busca rápida de achados/frases
 - [ ] Modo celular/tablet e impressão otimizada
 - [ ] Biblioteca de armadilhas técnicas e variantes anatômicas

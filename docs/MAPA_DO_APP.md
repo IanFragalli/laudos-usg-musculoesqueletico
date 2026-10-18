@@ -4,7 +4,7 @@ Auditoria feita em 16/10/2026 (leitura do código e extração dos dados embutid
 
 ## Arquitetura
 - Arquivo único, offline, sem dependências externas. Todo o conteúdo clínico está no objeto JavaScript `D` (linha ~288), com três chaves: `segmentos`, `imgs` (timbrado/assinatura em base64) e `catalogos`.
-- Estado em memória (`store`, `edits`, `ident`); nada é gravado em disco nem enviado a servidor. Fechar a aba apaga tudo.
+- Estado em memória (`store`, `edits`, `ident`); nada de paciente é gravado em disco nem enviado a servidor (exceção: o id do molde de cabeçalho escolhido fica no localStorage). Fechar a aba apaga tudo.
 - Fluxo: **modelo de relatório** (itens normais) → o usuário desliga "Normal" no item → escolhe **achados do banco** (com lacunas `.....`, medidas opcionais `[[...]]` e estruturas `{{catalogo}}`) → a **Impressão** é montada pelo campo `dx` de cada achado → folha A4 com timbrado → `window.print()`.
 
 ## Segmentos (13)
@@ -46,3 +46,4 @@ Seleção de segmento/modelo/lado; identificação (paciente, data, solicitante)
 - Lateralidade: sem opção "bilateral".
 
 - 18/10/2026: Joelho passa a ter 9 itens no modelo e 10 grupos de achados (novo item 9 — Tendão do bíceps femoral, 2 achados com `dx`). Quadril: removido o limiar de assimetria de 2 mm do derrame.
+- 18/10/2026: seletor **Cabeçalho** (moldes Particular e CREB Tatuapé; campo Nascimento no molde CREB) — ver `docs/MODELOS_DE_CABECALHO.md`.

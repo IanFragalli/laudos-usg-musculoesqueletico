@@ -18,3 +18,8 @@
 - Joelho: novo item 9 "Tendão do bíceps femoral" (frase normal + achados "lesão na inserção fibular (avulsão)" e "bursite colateral lateral–bíceps femoral"); impressões e dx correspondentes. Fontes: PMIDs 37663094, 35925385, 26064740, 18394503 (ver REFERENCIAS). Tendinopatia/rotura parcial/bursite calcária ficaram em PENDENTE_REVISAO por falta de fonte ultrassonográfica.
 - Removida a cópia antiga duplicada em `laudos-usg-musculoesqueletico/`.
 - Testes (Chromium headless): 16 combinações segmento/modelo, normal e alterado, e joelho com ambos os achados novos e medidas — 0 erros de console.
+
+## 18/10/2026 (pedido do Dr. Ian — moldes de cabeçalho)
+- Novo seletor **Cabeçalho** (registro `TIMBRADOS` no index.html): "Particular" (molde anterior, inalterado) e "CREB Tatuapé" (novo; sem item Atendimento; rodapé com endereço/telefone do Tatuapé; sem marca d'água). Campo "Nascimento" só no molde CREB. Preferência do molde guardada em localStorage (apenas o id). Guia de uso: `docs/MODELOS_DE_CABECALHO.md`.
+- Logo do CREB extraído do papel timbrado fornecido (apenas o logotipo; nenhum dado de paciente foi copiado).
+- Testes (Chromium headless): 16 combinações segmento/modelo nos dois moldes, normal e alterado, e PDF de impressão — 0 erros de console.
