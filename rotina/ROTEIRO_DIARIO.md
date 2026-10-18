@@ -1,4 +1,4 @@
-# Rotina diária de melhoria — Laudo assistido USG MSK
+# Rotina diária de melhoria — LaudoFlow (USG MSK)
 
 Objetivo: tornar o app referência digital em laudos e rotinas de ultrassom musculoesquelético.
 Cada execução faz UM ciclo pequeno, seguro e documentado.

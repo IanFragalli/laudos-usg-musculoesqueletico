@@ -1,4 +1,4 @@
-# Mapa do app — `index.html`
+# Mapa do app (LaudoFlow) — `index.html`
 
 Auditoria feita em 16/10/2026 (leitura do código e extração dos dados embutidos).
 
@@ -47,3 +47,4 @@ Seleção de segmento/modelo/lado; identificação (paciente, data, solicitante)
 
 - 18/10/2026: Joelho passa a ter 9 itens no modelo e 10 grupos de achados (novo item 9 — Tendão do bíceps femoral, 2 achados com `dx`). Quadril: removido o limiar de assimetria de 2 mm do derrame.
 - 18/10/2026: seletor **Cabeçalho** (moldes Particular e CREB Tatuapé; campo Nascimento no molde CREB) — ver `docs/MODELOS_DE_CABECALHO.md`.
+- 18/10/2026: app renomeado LaudoFlow; recomendações selecionáveis na Impressão (`RECOMENDACOES`); comparação com exame anterior agora após a Impressão.

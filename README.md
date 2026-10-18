@@ -1,4 +1,4 @@
-# Laudo assistido — USG musculoesquelético
+# LaudoFlow — USG musculoesquelético
 
 Aplicativo web (arquivo único, funciona offline) para geração de laudos de ultrassonografia
 musculoesquelética e apoio às rotinas de exame. Meta: ser referência digital para

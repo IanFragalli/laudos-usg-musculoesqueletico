@@ -24,3 +24,10 @@
 - Logo do CREB extraído do papel timbrado fornecido (apenas o logotipo; nenhum dado de paciente foi copiado).
 - Testes (Chromium headless): 16 combinações segmento/modelo nos dois moldes, normal e alterado, e PDF de impressão — 0 erros de console.
 - 18/10/2026 (ajuste): molde CREB Tatuapé — removida a data de nascimento (no lugar entrou a Data de emissão, que saiu do topo); endereço/telefone centralizados no rodapé; legenda do logo agora com "Botafogo" (nome da rede).
+
+## 18/10/2026 (pedido do Dr. Ian — LaudoFlow e ajustes de impressão)
+- App renomeado para **LaudoFlow** (título, barra, README); logo (wordmark) na barra e ícone como favicon; paleta e estilo flat aplicados à interface (sem sombras) — ver `docs/IDENTIDADE_VISUAL.md`.
+- **Impressão**: novo seletor de recomendações (correlacionar com dados clínicos / complementar com tomografia / correlacionar com ressonância / complementar com radiografia), redação fornecida pelo Dr. Ian; saem ao final da Impressão. "Tudo normal" limpa a seleção.
+- **Comparação com exame anterior** passou a ficar depois da Impressão (painel e folha).
+- **Cabeçalho** agora fica abaixo de Segmento na barra superior.
+- Testes (Chromium headless): 16 combinações segmento/modelo nos dois moldes, normal e alterado, recomendações marcadas, PDF — 0 erros de console.
