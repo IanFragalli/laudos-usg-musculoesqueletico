@@ -29,5 +29,5 @@
 - App renomeado para **LaudoFlow** (título, barra, README); logo (wordmark) na barra e ícone como favicon; paleta e estilo flat aplicados à interface (sem sombras) — ver `docs/IDENTIDADE_VISUAL.md`.
 - **Impressão**: novo seletor de recomendações (correlacionar com dados clínicos / complementar com tomografia / correlacionar com ressonância / complementar com radiografia), redação fornecida pelo Dr. Ian; saem ao final da Impressão. "Tudo normal" limpa a seleção.
 - **Comparação com exame anterior** passou a ficar depois da Impressão (painel e folha).
-- **Cabeçalho** agora fica abaixo de Segmento na barra superior.
+- **Cabeçalho** fica junto dos botões Tudo normal e Imprimir/PDF na barra superior.
 - Testes (Chromium headless): 16 combinações segmento/modelo nos dois moldes, normal e alterado, recomendações marcadas, PDF — 0 erros de console.
