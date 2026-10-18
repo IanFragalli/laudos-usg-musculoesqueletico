@@ -4,7 +4,7 @@ Na barra superior do app há o seletor **Cabeçalho**. Ele troca o topo, o bloco
 
 ## Moldes disponíveis
 - **Particular** (padrão): Dr. Ian Almeida Fragalli com logos (SBOT/OTP e pé), título/registros, campos Paciente / Data / Médico solicitante, marca d'água suave e assinatura no rodapé.
-- **CREB Tatuapé**: logo CREB (extraído do papel timbrado da clínica) com a legenda "Centro de Reumatologia e Ortopedia" (sem "Botafogo", por ser outra unidade), "Data de emissão" à direita, linha, Paciente + Data de nascimento, Médico solicitante (sem o item Atendimento), linha, laudo, assinatura e, no fim, o endereço: Rua Apucarana, 1619 – Tatuapé, São Paulo - SP / Telefone e WhatsApp: (11) 5180-2222. Sem marca d'água. A "Data de emissão" usa o campo **Data** da barra; o campo **Nascimento** só aparece neste molde.
+- **CREB Tatuapé**: logo CREB (extraído do papel timbrado da clínica) com a legenda "Centro de Reumatologia e Ortopedia Botafogo" (nome da rede), linha, Paciente + **Data de emissão** (campo **Data** da barra), Médico solicitante (sem o item Atendimento e sem data de nascimento), linha, laudo, assinatura e, no fim, o endereço centralizado: Rua Apucarana, 1619 – Tatuapé, São Paulo - SP / Telefone e WhatsApp: (11) 5180-2222. Sem marca d'água.
 
 ## Como adicionar um novo molde
 No `index.html`, procure `const TIMBRADOS = [` e copie um dos blocos. Troque:

@@ -23,3 +23,4 @@
 - Novo seletor **Cabeçalho** (registro `TIMBRADOS` no index.html): "Particular" (molde anterior, inalterado) e "CREB Tatuapé" (novo; sem item Atendimento; rodapé com endereço/telefone do Tatuapé; sem marca d'água). Campo "Nascimento" só no molde CREB. Preferência do molde guardada em localStorage (apenas o id). Guia de uso: `docs/MODELOS_DE_CABECALHO.md`.
 - Logo do CREB extraído do papel timbrado fornecido (apenas o logotipo; nenhum dado de paciente foi copiado).
 - Testes (Chromium headless): 16 combinações segmento/modelo nos dois moldes, normal e alterado, e PDF de impressão — 0 erros de console.
+- 18/10/2026 (ajuste): molde CREB Tatuapé — removida a data de nascimento (no lugar entrou a Data de emissão, que saiu do topo); endereço/telefone centralizados no rodapé; legenda do logo agora com "Botafogo" (nome da rede).

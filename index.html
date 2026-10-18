@@ -193,8 +193,8 @@ button{font:inherit;cursor:pointer}
 .cb-top{display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:2.6mm}
 .cb-logo{width:52mm}
 .cb-logo img{display:block;width:100%}
-.cb-tag{font-size:5.6pt;font-weight:700;color:var(--cb);margin-top:1.4mm;text-transform:uppercase;
-  letter-spacing:.15em;white-space:nowrap}
+.cb-tag{font-size:5.2pt;font-weight:700;color:var(--cb);margin-top:1.4mm;text-transform:uppercase;
+  letter-spacing:.09em;white-space:nowrap}
 .cb-emi{font-size:10.5pt;font-weight:600;color:#1A1A1A;padding-bottom:1mm}
 .cb-rule{border-bottom:.9pt solid #1A1A1A}
 .cb-id{font-size:10.5pt;color:#1A1A1A;padding:4.5mm 0 4.5mm}
@@ -203,7 +203,7 @@ button{font:inherit;cursor:pointer}
 .cb-k{font-weight:600}
 .cb-id + .cb-rule{margin-bottom:6mm}
 .cb-addr{border-top:.9pt solid #1A1A1A;margin-top:5mm;padding-top:2mm;font-size:9pt;color:#1A1A1A;line-height:1.4}
-.sheet-foot .cb-addr{text-align:left}
+.sheet-foot .cb-addr{text-align:center}
 
 /* ───────────── impressão ───────────── */
 @media print{
@@ -484,13 +484,13 @@ const TIMBRADOS = [
         <span class="k" style="margin-left:6mm">Médico solicitante</span><span class="v" id="oSol"></span></div>
       <div class="prule"></div>`,
     foot: () => `<div class="sheet-foot">${ASSIN_HTML()}</div>` },
-  { id: "creb_tatuape", nome: "CREB Tatuapé", marca: false, nasc: true,
+  { id: "creb_tatuape", nome: "CREB Tatuapé", marca: false, nasc: false,
     head: () => `<div class="cb-top">
-      <div class="cb-logo"><img src="${LOGO_CREB}" alt="CREB"><div class="cb-tag">Centro de Reumatologia e Ortopedia</div></div>
-      <div class="cb-emi">Data de emissão: <span id="oEmi"></span></div></div><div class="cb-rule"></div>`,
+      <div class="cb-logo"><img src="${LOGO_CREB}" alt="CREB"><div class="cb-tag">Centro de Reumatologia e Ortopedia Botafogo</div></div>
+      </div><div class="cb-rule"></div>`,
     ident: () => `<div class="cb-id">
       <div class="cb-row"><div><span class="cb-k">Paciente:</span> <span id="oPac"></span></div>
-        <div><span class="cb-k">Data de nascimento:</span> <span id="oNasc"></span></div></div>
+        <div><span class="cb-k">Data de emissão:</span> <span id="oEmi"></span></div></div>
       <div class="cb-row"><div><span class="cb-k">Médico solicitante:</span> <span id="oSol"></span></div></div>
     </div><div class="cb-rule"></div>`,
     foot: () => `<div class="sheet-foot">${ASSIN_HTML()}
