@@ -12,6 +12,8 @@
 - [ ] Guia de ultrassom intervencionista (guiado por imagem): checklist de segurança
 - [ ] Opção de lateralidade "bilateral" (novo, da auditoria)
 - [ ] Revisar achados sem `dx` (Cotovelo, Punho, Coxa, Perna, Panturrilha) — intencional? (novo, da auditoria)
-- [ ] Decidir limiares de referência do serviço (mediano/ulnar/fáscia plantar/quadril) com o Dr. Ian — ver PENDENTE_REVISAO (novo, 17/10)
-- [ ] Remover cópia antiga duplicada em `laudos-usg-musculoesqueletico/` (novo, 17/10)
+- [x] (18/10/2026) Limiares: quadril removido; mediano 10, fáscia 4, WFR 1,4 mantidos. Em aberto: ulnar
+- [x] (18/10/2026) Cópia antiga duplicada removida
 - [x] (17/10/2026) Revisão ortográfica/terminológica geral e conferência dos valores de referência
+- [ ] Atualizar `modelos-docx/09_USG_JOELHO.docx` com o item do bíceps femoral (novo, 18/10)
+- [ ] Buscar fonte ultrassonográfica para tendinopatia/rotura parcial do bíceps femoral distal (novo, 18/10)

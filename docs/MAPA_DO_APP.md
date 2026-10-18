@@ -44,3 +44,5 @@ Seleção de segmento/modelo/lado; identificação (paciente, data, solicitante)
 - Sem busca de achados/frases; sem checklist de varredura; sem exportação Word; sem persistência (por desenho, privacidade).
 - Cobertura de `dx`: alguns achados não têm `dx` (Cotovelo 23/24, Punho 34/38, Coxa, Perna e Panturrilha 25/26) — confirmar se é intencional (achados que não geram diagnóstico).
 - Lateralidade: sem opção "bilateral".
+
+- 18/10/2026: Joelho passa a ter 9 itens no modelo e 10 grupos de achados (novo item 9 — Tendão do bíceps femoral, 2 achados com `dx`). Quadril: removido o limiar de assimetria de 2 mm do derrame.

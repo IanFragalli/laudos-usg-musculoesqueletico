@@ -5,11 +5,16 @@
 - (16/10/2026) Frases rápidas do campo de comparação ("Sem alterações significativas…", "Evolução favorável/desfavorável…") são redação genérica, sem medidas; Dr. Ian deve validar o texto/terminologia de preferência.
 - (16/10/2026) Achados sem campo `dx` (Cotovelo 1, Punho 4, Coxa 1, Perna 1, Panturrilha 1): confirmar se é intencional.
 
-## Revisão de 17/10/2026 (sábado)
-- **Quadril — "assimetria superior a 2 mm" (distância colo-cápsula)**: não localizei fonte para esse limiar em adultos. Os estudos achados são pediátricos (Tien 2000: >1,46 mm) ou usam outro critério (Moss 1998, adultos: ≥5 mm de largura). Marcado com **[verificar]** no texto do app (aparece só com "incluir medidas"). Dr. Ian: confirmar o critério de preferência (ou remover) antes de usar.
-- **Nervo mediano "até 10 mm²"**: meta-análise recente sugere corte ótimo de 10,5 mm² (asiáticos) e 11,5 mm² (não asiáticos); sugerir texto "valor de referência ~10 mm² (varia 10–12 mm² conforme população/serviço)" ou adotar o limiar do serviço. Não alterado no app.
-- **Nervo ulnar "até 10 mm²" (túnel cubital)**: corte depende do sítio (epicôndilo medial, 2 cm proximal, sulco retrocondilar) e da idade (10,0–11,4 mm²); sensibilidade baixa. Considerar indicar o nível de medida no texto. Não alterado.
-- **Fáscia plantar "até 4 mm"**: apoiado por Cardinal 1996, porém Wang 2023 (Int J Gen Med, PMID 37904905) encontrou corte ótimo de 3,15 mm e Ramu 2022 (J Ultrasound, PMID 35947294) mostrou sensibilidade de apenas 70% para >4 mm. Manter 4 mm e deixar a decisão ao médico.
-- **WFR "até 1,4"**: confirmado (Hobson-Webb 2008).
-- **Terminologia**: o app usa "rotura" (≈120×) como padrão; mantido, e a única ocorrência de "ruptura" foi padronizada. Varia entre "ao Doppler" e "ao estudo Doppler" (ambas aceitáveis) — padronizar se desejado.
-- **Estrutura do repositório**: existe uma cópia antiga duplicada em `laudos-usg-musculoesqueletico/` (subpasta) com `index.html` desatualizado (sem comparação com exame anterior). A rotina trabalha na raiz. Considerar remover a subpasta.
+## Revisão de 17/10/2026 (sábado) — decisões do Dr. Ian em 18/10/2026
+- **Quadril — limiar de 2 mm (colo-cápsula)**: REMOVIDO do app (sem fonte em adultos). Resolvido.
+- **Nervo mediano "até 10 mm²"**: mantido em 10 mm² por decisão do Dr. Ian. Resolvido.
+- **Fáscia plantar "até 4 mm"**: mantido em 4 mm por decisão do Dr. Ian. Resolvido.
+- **Razão punho/antebraço "até 1,4"**: mantida (Hobson-Webb 2008). Resolvido.
+- **Nervo ulnar "até 10 mm²" (túnel cubital)**: não foi decidido; o corte depende do sítio e da idade (10,0–11,4 mm²). Em aberto.
+- **Terminologia**: padrão "rotura"; "ao Doppler" vs "ao estudo Doppler" são ambas aceitáveis. Opcional.
+
+## Joelho — tendão do bíceps femoral (18/10/2026)
+- Inseridos no app: item normal (tendão íntegro, inserção na cabeça da fíbula), "lesão na inserção fibular (avulsão)" e "bursite entre o ligamento colateral lateral e o bíceps femoral". Apoio: anatomia e lesões de canto posterolateral (Toyooka 2023; Rakhra 2022), associação com paralisia do nervo fibular (Oshima 2015) e bursa LCL–bíceps femoral (Keskin 2008, relato de caso).
+- NÃO inseridos por falta de fonte ultrassonográfica verificada: **tendinopatia do bíceps femoral distal**, **rotura parcial/miotendínea** e **bursite calcária** (só relato de caso em radiografia/TC). Dr. Ian: indicar fonte/critério de preferência se quiser incluí-los.
+- A frase "sugere-se avaliação ... do nervo fibular comum" apoia-se em relatos de caso/série cirúrgica (44% de paralisia em PLC + avulsão do bíceps); validar se deseja manter a recomendação.
+- Os modelos `.docx` em `modelos-docx/` NÃO foram atualizados com o item 9 do joelho.
