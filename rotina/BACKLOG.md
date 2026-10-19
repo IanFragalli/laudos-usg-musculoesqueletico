@@ -19,3 +19,4 @@
 - [ ] Buscar fonte ultrassonográfica para tendinopatia/rotura parcial do bíceps femoral distal (novo, 18/10)
 - [ ] Frase de recomendação de RM (FABS) para roturas parciais/duvidosas do bíceps distal — aguardar decisão do Dr. Ian (novo, 19/10)
 - [ ] Atualizar `modelos-docx/` de ombro e cotovelo com os achados novos (novo, 19/10)
+- [ ] Critérios ultrassonográficos estáticos para graduar lesão do LCL lateral do cotovelo; confirmar PMIDs de Noriego 2022 e Plath 2022 (novo, 19/10 – 2º ciclo)

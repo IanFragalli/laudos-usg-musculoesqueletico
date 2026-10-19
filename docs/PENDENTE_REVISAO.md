@@ -23,3 +23,8 @@
 - Inseridos: Ombro "Cisto paralabral posterior"; Cotovelo "Rotura parcial do tríceps distal", "Rotura completa do tríceps distal" e "Tríceps em ressalto (dinâmico)". Dr. Ian: validar redação. O cisto paralabral tem apoio ultrassonográfico apenas em relato de caso (Sousa 2025); o vínculo com neuropatia do supraescapular vem de coorte por RM (Mun 2024).
 - Não inseridos: critérios ultrassonográficos de graduação de rotura parcial do bíceps distal (US teve acurácia baixa vs RM em Lynch 2019, PMID 30987955); sugere-se avaliar frase com recomendação de RM (incidência FABS) nas roturas parciais/duvidosas — decisão do Dr. Ian.
 - Em aberto: limiar do nervo ulnar (10 mm²).
+
+## Cotovelo — ligamento colateral lateral (19/10/2026, 2º ciclo)
+- Inseridos: "Lesão do ligamento colateral lateral" e "Frouxidão ulnoumeral ao estresse posterolateral (dinâmico)". Dr. Ian: validar redação, especialmente "parcial / completa" (escolha manual) e a recomendação de RM.
+- Cuidado de evidência: o teste de estresse US é adjunto ao exame clínico; Plath 2022 (Arch Orthop Trauma Surg, estudo cadavérico) encontrou confiabilidade interobservador baixa (ICC 0,4) — PMID não confirmado. Noriego 2022 (Clin Anat; LUCL identificada por US em todos os 55 espécimes) lido via Consensus, PMID não confirmado (PubMed limitou acesso) → não citado como suporte. Nenhum limiar numérico foi inserido.
+- Em aberto: critérios ultrassonográficos estáticos de graduação de lesão do LCL lateral (sem fonte forte) e fonte ultrassonográfica para tendinopatia do bíceps femoral (anterior).

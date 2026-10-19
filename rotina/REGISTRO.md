@@ -37,3 +37,8 @@
 - Cotovelo: novos achados **Rotura parcial do tríceps distal**, **Rotura completa do tríceps distal** (retração opcional) e **Tríceps em ressalto (dinâmico)**, com dx.
 - Fontes: PMIDs 39439307, 41552105, 28660143, 39612282 (aplicadas); 30987955 (lida, não aplicada). Ver REFERENCIAS e PENDENTE_REVISAO.
 - Testes (Chromium headless): 13 segmentos em laudo normal; Ombro e Cotovelo com todos os achados marcados e medidas ligadas — 0 erros de console; novos achados aparecem no relatório e na impressão.
+
+## 19/10/2026 (segunda — 2º ciclo, conteúdo clínico: cotovelo)
+- Cotovelo: novos achados **Lesão do ligamento colateral lateral** e **Frouxidão ulnoumeral ao estresse posterolateral (dinâmico)**, com dx; medidas opcionais, sem limiar numérico.
+- Fontes: PMIDs 27317917, 42007425, 41067537, 36124539 (ver REFERENCIAS e PENDENTE_REVISAO). PubMed limitou o acesso (HTTP 429) na busca de um PMID adicional.
+- Testes (Chromium headless): cotovelo com os dois novos achados marcados e medidas preenchidas (relatório e impressão); Ombro em laudo normal — 0 erros de console.
