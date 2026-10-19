@@ -18,3 +18,8 @@
 - NÃO inseridos por falta de fonte ultrassonográfica verificada: **tendinopatia do bíceps femoral distal**, **rotura parcial/miotendínea** e **bursite calcária** (só relato de caso em radiografia/TC). Dr. Ian: indicar fonte/critério de preferência se quiser incluí-los.
 - A frase "sugere-se avaliação ... do nervo fibular comum" apoia-se em relatos de caso/série cirúrgica (44% de paralisia em PLC + avulsão do bíceps); validar se deseja manter a recomendação.
 - Os modelos `.docx` em `modelos-docx/` NÃO foram atualizados com o item 9 do joelho.
+
+## Ombro/cotovelo (19/10/2026)
+- Inseridos: Ombro "Cisto paralabral posterior"; Cotovelo "Rotura parcial do tríceps distal", "Rotura completa do tríceps distal" e "Tríceps em ressalto (dinâmico)". Dr. Ian: validar redação. O cisto paralabral tem apoio ultrassonográfico apenas em relato de caso (Sousa 2025); o vínculo com neuropatia do supraescapular vem de coorte por RM (Mun 2024).
+- Não inseridos: critérios ultrassonográficos de graduação de rotura parcial do bíceps distal (US teve acurácia baixa vs RM em Lynch 2019, PMID 30987955); sugere-se avaliar frase com recomendação de RM (incidência FABS) nas roturas parciais/duvidosas — decisão do Dr. Ian.
+- Em aberto: limiar do nervo ulnar (10 mm²).

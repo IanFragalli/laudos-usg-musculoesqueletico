@@ -17,3 +17,5 @@
 - [x] (17/10/2026) Revisão ortográfica/terminológica geral e conferência dos valores de referência
 - [ ] Atualizar `modelos-docx/09_USG_JOELHO.docx` com o item do bíceps femoral (novo, 18/10)
 - [ ] Buscar fonte ultrassonográfica para tendinopatia/rotura parcial do bíceps femoral distal (novo, 18/10)
+- [ ] Frase de recomendação de RM (FABS) para roturas parciais/duvidosas do bíceps distal — aguardar decisão do Dr. Ian (novo, 19/10)
+- [ ] Atualizar `modelos-docx/` de ombro e cotovelo com os achados novos (novo, 19/10)

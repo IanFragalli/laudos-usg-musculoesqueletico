@@ -31,3 +31,9 @@
 - **Comparação com exame anterior** passou a ficar depois da Impressão (painel e folha).
 - **Cabeçalho** fica junto dos botões Tudo normal e Imprimir/PDF na barra superior.
 - Testes (Chromium headless): 16 combinações segmento/modelo nos dois moldes, normal e alterado, recomendações marcadas, PDF — 0 erros de console.
+
+## 19/10/2026 (segunda — conteúdo clínico: ombro e cotovelo)
+- Ombro: novo achado **Cisto paralabral posterior** (com medida opcional e recomendação de RM; dx incluído).
+- Cotovelo: novos achados **Rotura parcial do tríceps distal**, **Rotura completa do tríceps distal** (retração opcional) e **Tríceps em ressalto (dinâmico)**, com dx.
+- Fontes: PMIDs 39439307, 41552105, 28660143, 39612282 (aplicadas); 30987955 (lida, não aplicada). Ver REFERENCIAS e PENDENTE_REVISAO.
+- Testes (Chromium headless): 13 segmentos em laudo normal; Ombro e Cotovelo com todos os achados marcados e medidas ligadas — 0 erros de console; novos achados aparecem no relatório e na impressão.
