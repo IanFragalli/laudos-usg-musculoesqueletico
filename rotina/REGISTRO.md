@@ -42,3 +42,9 @@
 - Cotovelo: novos achados **Lesão do ligamento colateral lateral** e **Frouxidão ulnoumeral ao estresse posterolateral (dinâmico)**, com dx; medidas opcionais, sem limiar numérico.
 - Fontes: PMIDs 27317917, 42007425, 41067537, 36124539 (ver REFERENCIAS e PENDENTE_REVISAO). PubMed limitou o acesso (HTTP 429) na busca de um PMID adicional.
 - Testes (Chromium headless): cotovelo com os dois novos achados marcados e medidas preenchidas (relatório e impressão); Ombro em laudo normal — 0 erros de console.
+
+## 20/10/2026 (terça — conteúdo clínico: punho/mão, quadril/coxa)
+- Punho: novos achados **Neuropatia do ramo superficial do radial (Wartenberg)** e **Neuroma do ramo superficial do radial** (Item 5, compartimentos extensores), com dx; medida opcional sem limiar numérico.
+- Quadril: novos achados **Rotura do reto femoral proximal** e **Tendinite calcária do reto femoral** (face anterior), com dx e medidas opcionais.
+- Fontes: PMIDs 37296780 (texto completo lido), 28857221, 26956398 (resumos); 7573663 (contexto anatômico, não aplicado). Ver REFERENCIAS e PENDENTE_REVISAO.
+- Testes (Chromium headless): Punho (modelos A e B) e Quadril em laudo normal e alterado, com os novos achados marcados e medidas ligadas (relatório e impressão) — 0 erros de console.

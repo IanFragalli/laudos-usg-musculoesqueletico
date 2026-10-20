@@ -20,3 +20,5 @@
 - [ ] Frase de recomendação de RM (FABS) para roturas parciais/duvidosas do bíceps distal — aguardar decisão do Dr. Ian (novo, 19/10)
 - [ ] Atualizar `modelos-docx/` de ombro e cotovelo com os achados novos (novo, 19/10)
 - [ ] Critérios ultrassonográficos estáticos para graduar lesão do LCL lateral do cotovelo; confirmar PMIDs de Noriego 2022 e Plath 2022 (novo, 19/10 – 2º ciclo)
+- [ ] Avulsão da EIAI (reto femoral, cabeça direta) em pacientes imaturos e rotura miotendínea distal do reto femoral — ler texto completo antes de inserir (novo, 20/10)
+- [ ] Área de secção transversal de referência para o ramo superficial do radial / nervos distais do punho — buscar fonte (novo, 20/10)
