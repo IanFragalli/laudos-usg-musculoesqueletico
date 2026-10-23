@@ -44,7 +44,36 @@ button{font:inherit;cursor:pointer}
 /* ───────────── layout ───────────── */
 .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,720px);gap:22px;
   padding:22px;align-items:start;max-width:1720px;margin:0 auto}
-@media(max-width:1180px){.wrap{grid-template-columns:1fr}}
+@media(max-width:1180px){.wrap{grid-template-columns:minmax(0,1fr)}.paper{position:static}}
+/* celular / tablet */
+@media(max-width:700px){
+  .bar{position:static;padding:10px 12px;gap:10px;display:grid;grid-template-columns:1fr 1fr;align-items:end}
+  .brand{grid-column:1/-1;flex-direction:row;align-items:center;gap:10px}
+  .bar .spacer{display:none}
+  .bar .field select,.bar .field input{min-width:0 !important;width:100% !important}
+  .bar .act{grid-column:1/-1;flex-wrap:wrap}
+  .bar .act .field{flex:1 1 100%}
+  .bar .act .btn{flex:1 1 40%}
+  .wrap{padding:10px;gap:14px}
+  .console-head,.busca,.comp,.impr{padding-left:12px;padding-right:12px}
+  .grouphead{padding-left:12px;padding-right:12px}
+  .row{grid-template-columns:34px minmax(0,1fr);padding:11px 12px}
+  .row > .toggle{grid-column:2;justify-self:start}
+  .finds,.locknote,.peek,.warn{grid-column:2/-1}
+  .slots,.fields,.edtxt{margin-left:0}
+  .fld{width:80px}
+  .busca .cnt{display:none}
+  .busca kbd{display:none}
+}
+/* telas de toque: alvos maiores */
+@media(pointer:coarse){
+  .find input[type=checkbox]{width:22px;height:22px}
+  .chip{padding:7px 12px}
+  .btn,.busca button{padding:11px 16px}
+  .track{width:48px;height:26px;border-radius:13px}
+  .track::after{width:20px;height:20px}
+  .toggle input:checked + .track::after{transform:translateX(22px)}
+}
 
 /* ───────────── console ───────────── */
 .console{background:var(--panel);border:1px solid var(--rule);border-radius:4px}
@@ -129,6 +158,18 @@ button{font:inherit;cursor:pointer}
 .freebtn{align-self:flex-start;margin-top:2px;background:none;border:0;padding:0;
   font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
   color:var(--green);text-decoration:underline;text-underline-offset:3px}
+
+/* busca rápida */
+.busca{display:flex;align-items:center;gap:8px;padding:10px 20px;border-bottom:1px solid var(--rule);background:var(--ice)}
+.busca input{flex:1;min-width:0;font:inherit;padding:7px 10px;border:1px solid var(--rule-strong);border-radius:3px;background:#fff;color:var(--ink)}
+.busca button{padding:6px 11px;border:1px solid var(--rule-strong);background:#fff;border-radius:3px;font-size:11px;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.busca button:hover{border-color:var(--green);color:var(--green)}
+.busca .cnt{font-family:var(--mono);font-size:11px;color:var(--muted);white-space:nowrap}
+.busca kbd{font-family:var(--mono);font-size:10px;border:1px solid var(--rule-strong);border-radius:3px;padding:0 4px;color:var(--soft);background:#fff}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+mark.hit{background:#FFF3C4;color:inherit;border-radius:2px;padding:0 1px}
+.nores{padding:18px 20px;font-size:13px;color:var(--soft);font-style:italic}
 
 /* impressão */
 .comp{padding:14px 20px 4px;border-top:1px solid var(--rule)}
@@ -260,6 +301,13 @@ button{font:inherit;cursor:pointer}
         <div class="tally" id="tally"></div>
         <div class="hint">Cada item nasce normal. Desligue “Normal” para liberar os achados do banco.</div>
       </div>
+    </div>
+    <div class="busca" role="search">
+      <label class="sr" for="busca">Buscar achado ou frase neste segmento</label>
+      <input id="busca" type="search" placeholder="Buscar achado ou frase neste segmento…" autocomplete="off" aria-describedby="buscaCnt">
+      <span class="cnt" id="buscaCnt" aria-live="polite"></span>
+      <kbd title="Atalho para a busca">/</kbd>
+      <button type="button" id="buscaLimpa" hidden>limpar</button>
     </div>
     <div id="itens"></div>
     <div id="extras"></div>
@@ -600,19 +648,50 @@ function montarBarra() {
 const seg_ = $("#seg"), mod_ = $("#mod");
 
 /* ─────────── console ─────────── */
+/* busca: ignora acentos e maiúsculas */
+const norm = t => (t || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+let consulta = "";
+let nHits = 0;
+function marcarHits(node, q) {
+  if (!q) return;
+  const t = node.textContent, n = norm(t);
+  /* norm preserva o comprimento (só remove marcas combinantes após NFD de letras simples do pt-BR) */
+  if (n.length !== t.length) return;
+  const i = n.indexOf(q);
+  if (i < 0) return;
+  node.textContent = "";
+  node.append(t.slice(0, i));
+  const mk = document.createElement("mark"); mk.className = "hit"; mk.textContent = t.slice(i, i + q.length);
+  node.append(mk, t.slice(i + q.length));
+}
+
 function montarConsole() {
   const s = estado(), m = mod(), ls = linhas(m);
+  const q = norm(consulta.trim());
+  nHits = 0;
   ttl.textContent = nomeCurto(seg()) + " " + s.lado;
   itens.innerHTML = ""; extras.innerHTML = "";
-  let blocoAtual = -1;
+  let blocoAtual = -1, cabecaPend = null;
+  const textoAchado = (key, a) => a.nome + " " + montar(key, txt(chave() + "|f" + key, a.texto)).replace(/\{\{(\w+)\}\}/g, "");
 
   ls.forEach((ln, i) => {
     if (ln.bloco !== blocoAtual && ln.bloco >= 0) {
       blocoAtual = ln.bloco;
-      itens.appendChild(el("div", "grouphead", m.blocos[blocoAtual].titulo));
+      cabecaPend = el("div", "grouphead", m.blocos[blocoAtual].titulo);
+      if (!q) { itens.appendChild(cabecaPend); cabecaPend = null; }
     }
     const st = s.itens[i], n = i + 1;
     const gs = gruposDoItem(n);
+    /* filtro da busca: a linha entra se a frase normal ou algum achado do banco combinar */
+    const frase = txt(chave() + "|n" + i, ln.texto);
+    const fraseHit = q && norm(frase).includes(q);
+    const achHit = new Set();
+    if (q) gs.forEach(({ g, gi }) => g.achados.forEach((a, ai) => {
+      const key = gi + ":" + ai;
+      if (norm(textoAchado(key, a)).includes(q)) achHit.add(key);
+    }));
+    if (q && !fraseHit && !achHit.size) return;
+    if (q) { nHits += (fraseHit ? 1 : 0) + achHit.size; if (cabecaPend) { itens.appendChild(cabecaPend); cabecaPend = null; } }
     const row = el("div", "row" + (i % 2 ? " alt" : ""));
     row.classList.toggle("altered", !st.normal);
     row.classList.toggle("pending", !st.normal && !st.sel.length && !st.livres.length);
@@ -622,8 +701,10 @@ function montarConsole() {
 
     const p = el("p", "sent norm");
     p.contentEditable = "true"; p.spellcheck = false;
-    p.textContent = txt(chave() + "|n" + i, ln.texto);
+    p.textContent = frase;
+    p.setAttribute("aria-label", "Frase normal, editável");
     p.oninput = () => { setTxt(chave() + "|n" + i, p.textContent); render(); };
+    if (fraseHit) marcarHits(p, q);
     row.appendChild(p);
 
     const lab = el("label", "toggle");
@@ -637,7 +718,7 @@ function montarConsole() {
     row.appendChild(lab);
 
     const total = gs.reduce((a, o) => a + o.g.achados.length, 0);
-    if (gs.length && st.normal && !st.aberto) {
+    if (gs.length && st.normal && !st.aberto && !q) {
       const pk = el("button", "peek", "ver " + total + " achado" + (total > 1 ? "s" : "") +
         " do banco"); pk.type = "button";
       pk.onclick = () => { st.aberto = true; montarConsole(); };
@@ -648,17 +729,20 @@ function montarConsole() {
         if (gs.length > 1) ul.appendChild(el("li", "gtitle", g.titulo));
         g.achados.forEach((a, ai) => {
           const key = gi + ":" + ai, on = st.sel.includes(key);
+          if (q && !fraseHit && !achHit.has(key)) return;
           const li = el("li", "find" + (on ? " on" : ""));
           const c = el("input"); c.type = "checkbox"; c.checked = on; c.disabled = st.normal;
+          c.setAttribute("aria-label", a.nome);
           c.onchange = () => {
             if (c.checked) st.sel.push(key); else st.sel = st.sel.filter(k => k !== key);
             montarConsole(); render();
           };
           const t = el("span", "txt");
-          t.appendChild(el("b", null, a.nome + " · "));
+          const nb = el("b", null, a.nome + " · "), tx = el("span", null,
+            montar(key, txt(chave() + "|f" + key, a.texto)).replace(/\{\{(\w+)\}\}/g, "…"));
           const corrente = txt(chave() + "|f" + key, a.texto);
-          t.appendChild(el("span", null,
-            montar(key, corrente).replace(/\{\{(\w+)\}\}/g, "…")));
+          if (achHit.has(key)) { marcarHits(nb, q); marcarHits(tx, q); }
+          t.append(nb, tx);
           li.append(c, t); ul.appendChild(li);
           if (on) painel(ul, key, corrente);
         });
@@ -697,32 +781,44 @@ function montarConsole() {
 
   /* outros achados */
   const livres = gruposLivres();
-  if (livres.length) {
+  const hitExtra = (gi, ai) => !q || norm(textoAchado(gi + ":" + ai, seg().grupos[gi].achados[ai])).includes(q);
+  const algumExtra = livres.some(({ g, gi }) => g.achados.some((a, ai) => hitExtra(gi, ai)));
+  if (livres.length && algumExtra) {
     extras.appendChild(el("div", "grouphead", "Outros achados — entram numerados ao final"));
     const box = el("div", "row"); box.style.gridTemplateColumns = "44px 1fr";
     box.appendChild(el("div", "idx", "++"));
     const ul = el("ul", "finds"); ul.style.gridColumn = "2/-1"; ul.style.marginTop = "0";
     livres.forEach(({ g, gi }) => {
+      if (!g.achados.some((a, ai) => hitExtra(gi, ai))) return;
       ul.appendChild(el("li", "gtitle", g.titulo));
       g.achados.forEach((a, ai) => {
+        if (!hitExtra(gi, ai)) return;
         const key = gi + ":" + ai, on = s.extras.includes(key);
+        if (q) nHits++;
         const li = el("li", "find" + (on ? " on" : ""));
         const c = el("input"); c.type = "checkbox"; c.checked = on;
+        c.setAttribute("aria-label", a.nome);
         c.onchange = () => {
           if (c.checked) s.extras.push(key); else s.extras = s.extras.filter(k => k !== key);
           montarConsole(); render();
         };
         const t = el("span", "txt");
-        t.appendChild(el("b", null, a.nome + " · "));
         const corr = txt(chave() + "|f" + key, a.texto);
-        t.appendChild(el("span", null,
-          montar(key, corr).replace(/\{\{(\w+)\}\}/g, "…")));
+        const nb = el("b", null, a.nome + " · "), tx = el("span", null,
+          montar(key, corr).replace(/\{\{(\w+)\}\}/g, "…"));
+        if (q) { marcarHits(nb, q); marcarHits(tx, q); }
+        t.append(nb, tx);
         li.append(c, t); ul.appendChild(li);
         if (on) painel(ul, key, corr);
       });
     });
     box.appendChild(ul); extras.appendChild(box);
   }
+
+  /* resultado da busca */
+  buscaLimpa.hidden = !consulta;
+  buscaCnt.textContent = q ? (nHits ? nHits + (nHits > 1 ? " resultados" : " resultado") : "nenhum resultado") : "";
+  if (q && !nHits) itens.appendChild(el("div", "nores", "Nada encontrado para “" + consulta.trim() + "” neste segmento."));
 
   /* impressão — gerada a partir do que foi marcado */
   const dxs = conclusoes();
@@ -846,6 +942,17 @@ function ajustarZoom() {
 
 /* ─────────── eventos ─────────── */
 seg_.onchange = () => { si = +seg_.value; mi = 0; montarBarra(); montarConsole(); render(); };
+busca.oninput = () => { consulta = busca.value; montarConsole(); };
+buscaLimpa.onclick = () => { busca.value = ""; consulta = ""; montarConsole(); busca.focus(); };
+busca.onkeydown = e => { if (e.key === "Escape" && busca.value) { e.preventDefault(); buscaLimpa.onclick(); } };
+/* atalho "/" ou Ctrl/Cmd+K: foca a busca (fora de campos de texto) */
+addEventListener("keydown", e => {
+  const a = document.activeElement, emCampo = a && (a.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName));
+  if ((e.key === "/" && !emCampo && !e.ctrlKey && !e.metaKey && !e.altKey) ||
+      ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k")) {
+    e.preventDefault(); busca.focus(); busca.select();
+  }
+});
 mod_.onchange = () => { mi = +mod_.value; montarConsole(); render(); };
 lado.onchange = () => { estado().lado = lado.value; montarConsole(); render(); };
 [["pac", "pac"], ["dt", "dt"], ["nasc", "nasc"], ["sol", "sol"]].forEach(([id, k]) =>

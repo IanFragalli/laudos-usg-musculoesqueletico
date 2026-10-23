@@ -5,8 +5,8 @@
 - [ ] Classificações usuais por estrutura (ex.: manguito rotador, tendinopatias, meniscos, ligamentos)
 - [x] (16/10/2026) Campo de comparação com exame anterior
 - [~] Exportar laudo em PDF/Word com cabeçalho do serviço (seletor de cabeçalho pronto em 18/10; falta exportação Word)
-- [ ] Busca rápida de achados/frases
-- [ ] Modo celular/tablet e impressão otimizada
+- [x] (23/10/2026) Busca rápida de achados/frases (por segmento; atalho / ou Ctrl+K)
+- [~] Modo celular/tablet e impressão otimizada (celular/tablet feito em 23/10; falta revisar a impressão em papel)
 - [ ] Biblioteca de armadilhas técnicas e variantes anatômicas
 - [ ] Glossário e tabela de valores de referência com fonte
 - [ ] Guia de ultrassom intervencionista (guiado por imagem): checklist de segurança

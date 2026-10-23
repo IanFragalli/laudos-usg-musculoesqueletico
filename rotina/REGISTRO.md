@@ -48,3 +48,10 @@
 - Quadril: novos achados **Rotura do reto femoral proximal** e **Tendinite calcária do reto femoral** (face anterior), com dx e medidas opcionais.
 - Fontes: PMIDs 37296780 (texto completo lido), 28857221, 26956398 (resumos); 7573663 (contexto anatômico, não aplicado). Ver REFERENCIAS e PENDENTE_REVISAO.
 - Testes (Chromium headless): Punho (modelos A e B) e Quadril em laudo normal e alterado, com os novos achados marcados e medidas ligadas (relatório e impressão) — 0 erros de console.
+
+## 23/10/2026 (sexta — funcionalidades)
+- **Busca rápida** no console: filtra frases normais e achados do banco do segmento atual (sem diferenciar acentos/maiúsculas), destaca o trecho, mostra contador de resultados (leitor de tela via aria-live). Atalhos: `/` ou Ctrl/Cmd+K focam a busca; Esc limpa. A busca não altera o laudo; itens ocultos pelo filtro continuam valendo.
+- **Celular/tablet**: corrigido estouro horizontal da página em telas estreitas (coluna do grid com `minmax(0,1fr)`); barra superior em grade de 2 colunas e não fixa no celular; linhas do console reorganizadas; alvos de toque maiores (`pointer:coarse`); folha A4 deixa de ser fixa em telas <1180 px.
+- **Acessibilidade**: rótulos (`aria-label`) nos checkboxes de achados e nas frases editáveis; campo de busca com rótulo para leitor de tela.
+- Testes (Chromium headless/Playwright, 1400 px e 390 px): 13 segmentos/modelos em laudo normal e alterado, busca com e sem resultado, acentos, atalho e Esc — 0 erros de console; sem rolagem horizontal em 390 px.
+- Fontes: nenhum conteúdo clínico novo (apenas funcionalidade).
