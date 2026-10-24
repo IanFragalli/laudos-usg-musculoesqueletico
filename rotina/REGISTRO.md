@@ -55,3 +55,11 @@
 - **Acessibilidade**: rótulos (`aria-label`) nos checkboxes de achados e nas frases editáveis; campo de busca com rótulo para leitor de tela.
 - Testes (Chromium headless/Playwright, 1400 px e 390 px): 13 segmentos/modelos em laudo normal e alterado, busca com e sem resultado, acentos, atalho e Esc — 0 erros de console; sem rolagem horizontal em 390 px.
 - Fontes: nenhum conteúdo clínico novo (apenas funcionalidade).
+
+## 24/10/2026 (sábado — revisão)
+- Fila de push: patch 001 (23/10, busca/celular) aplicado sobre a main antes do trabalho de hoje.
+- Revisão de terminologia/ortografia nos 1.820 textos: nenhuma divergência nova (padrão "rotura", "hipoecoico", "bicipitorradial", hifenização de "ântero-posterior", "pré-patelar", "intra/extra-articular" consistentes). Sem alteração de conteúdo clínico.
+- Novo `rotina/verificar_integridade.js`: confere marcadores `{{...}}` x catálogos (39, todos usados), colchetes/chaves balanceados, achados sem texto, nomes duplicados e grafias antigas. Resultado: OK.
+- PENDENTE_REVISAO revisado: os 8 achados sem `dx` são complementos/sinais (Hiperemia intraneural, Sinal do entalhe, Relação punho/antebraço, Estudo venoso normal, Mãos sem alterações) — coerente com serem complementares; aguarda confirmação do Dr. Ian.
+- Testes (Chromium headless): 13 segmentos, laudo normal e alterado (1º achado), busca digitada/limpa — 0 erros de console.
+- Fontes: nenhum conteúdo clínico novo.
