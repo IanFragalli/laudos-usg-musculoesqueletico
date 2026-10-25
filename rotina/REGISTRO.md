@@ -63,3 +63,9 @@
 - PENDENTE_REVISAO revisado: os 8 achados sem `dx` são complementos/sinais (Hiperemia intraneural, Sinal do entalhe, Relação punho/antebraço, Estudo venoso normal, Mãos sem alterações) — coerente com serem complementares; aguarda confirmação do Dr. Ian.
 - Testes (Chromium headless): 13 segmentos, laudo normal e alterado (1º achado), busca digitada/limpa — 0 erros de console.
 - Fontes: nenhum conteúdo clínico novo.
+
+## 25/10/2026 (domingo — busca de evidências)
+- Fila de push: patches 001 (23/10) e 002 (24/10) aplicados sobre a main (c6c4b31) com `git am`; integridade OK.
+- PubMed: busca de CSA do ramo sensitivo radial superficial (texto completo de Bae 2021, PMID 33950986, lido), LCL lateral do cotovelo (US), bíceps femoral distal e avulsão da EIAI/reto femoral. Só a primeira rendeu valor de referência utilizável; as demais não têm fonte ultrassonográfica adequada.
+- Nenhuma alteração no app (domingo = proposta; sem aplicar sem decisão). Registrado em REFERENCIAS e PENDENTE_REVISAO; backlog atualizado.
+- Testes: `verificar_integridade.js` OK; Chromium headless — 13 segmentos, laudo normal e alterado, 0 erros de console.

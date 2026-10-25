@@ -21,5 +21,5 @@
 - [ ] Atualizar `modelos-docx/` de ombro e cotovelo com os achados novos (novo, 19/10)
 - [ ] Critérios ultrassonográficos estáticos para graduar lesão do LCL lateral do cotovelo; confirmar PMIDs de Noriego 2022 e Plath 2022 (novo, 19/10 – 2º ciclo)
 - [ ] Avulsão da EIAI (reto femoral, cabeça direta) em pacientes imaturos e rotura miotendínea distal do reto femoral — ler texto completo antes de inserir (novo, 20/10)
-- [ ] Área de secção transversal de referência para o ramo superficial do radial / nervos distais do punho — buscar fonte (novo, 20/10)
+- [~] Área de secção transversal de referência para o ramo superficial do radial / nervos distais do punho — fonte encontrada em 25/10 (Bae 2021, PMID 33950986; proximal, população coreana); aguardando decisão do Dr. Ian (ver PENDENTE_REVISAO)
 - [ ] Rodar `node rotina/verificar_integridade.js` antes de cada commit clínico (novo, 24/10)
