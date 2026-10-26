@@ -69,3 +69,8 @@
 - PubMed: busca de CSA do ramo sensitivo radial superficial (texto completo de Bae 2021, PMID 33950986, lido), LCL lateral do cotovelo (US), bíceps femoral distal e avulsão da EIAI/reto femoral. Só a primeira rendeu valor de referência utilizável; as demais não têm fonte ultrassonográfica adequada.
 - Nenhuma alteração no app (domingo = proposta; sem aplicar sem decisão). Registrado em REFERENCIAS e PENDENTE_REVISAO; backlog atualizado.
 - Testes: `verificar_integridade.js` OK; Chromium headless — 13 segmentos, laudo normal e alterado, 0 erros de console.
+
+## 26/10/2026 (segunda — conteúdo clínico: ombro e cotovelo)
+- Fila de push: patches 001 (23/10), 002 (24/10) e 003 (25/10) aplicados sobre a main (c6c4b31) com `git am`; integridade OK (13 segmentos, 39 catálogos).
+- Busca (Consensus/PubMed) sobre roturas do subescapular à US: fontes com resumos lidos, mas sem texto completo (PMC bloqueado) e sem PMIDs confirmados → nenhum conteúdo clínico inserido no app; proposta em PENDENTE_REVISAO e referências em REFERENCIAS (marcadas "a confirmar").
+- Nenhuma alteração em `index.html`. Testes: `verificar_integridade.js` OK; abertura em Chromium headless sem erros de console.

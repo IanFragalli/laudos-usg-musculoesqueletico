@@ -44,3 +44,8 @@
 2. **Limiar do nervo ulnar (em aberto)**: a mesma fonte dá ulnar no epicôndilo medial 7,31 ± 1,69 mm² (5–11) e no punho 5,09 ± 1,29 mm² (3–8) — valores de referência de população asiática, não limiares diagnósticos; comparar com o 10 mm² do app antes de qualquer mudança.
 3. **LCL lateral / instabilidade posterolateral**: nenhuma nova fonte ULTRASSONOGRÁFICA surgiu na busca; as novas (drop sign em TC cadavérica, RM de luxação) não se aplicam ao app. Critérios de graduação ecográfica seguem pendentes.
 4. **Avulsão da EIAI / rotura distal do reto femoral e tendinopatia/rotura do bíceps femoral distal**: buscas sem fonte ultrassonográfica adequada (somente relatos de caso e RM). Seguem pendentes; não inserir.
+
+## Segunda-feira (26/10/2026) — ombro: subescapular — proposta, NÃO inserido
+- O app não tem achado específico para o tendão subescapular (só "Manguito rotador" genérico). A literatura (REFERENCIAS, 26/10) sustenta que a US detecta roturas do subescapular, mas com sensibilidade modesta para roturas pequenas (Lafosse 1–2) e forte dependência do operador; roturas parciais são facilmente subdiagnosticadas.
+- Faltam: (a) texto completo com critérios ultrassonográficos descritivos (planos, rotação externa/dinâmica, sinais indiretos) e (b) PMIDs/DOIs confirmados. Sem isso não foi inserida redação clínica.
+- Decisão do Dr. Ian: autorizar novo achado "Rotura do subescapular (Lafosse)" com redação própria revisada por ele, e/ou nota de limitação (sensibilidade reduzida em roturas pequenas) na impressão. A subluxação medial do CLB NÃO deve ser usada como indício de rotura do subescapular (correlação fraca, Prakash 2024).
