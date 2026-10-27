@@ -25,3 +25,6 @@
 - [ ] Rodar `node rotina/verificar_integridade.js` antes de cada commit clínico (novo, 24/10)
 - [ ] Ombro: achado "Rotura do subescapular (Lafosse)" — obter texto completo e PMIDs; aguardar redação/decisão do Dr. Ian (novo, 26/10)
 - [ ] Cotovelo: síndrome do túnel radial / nervo interósseo posterior — avaliar fonte US (achados iniciais de busca em 26/10, não lidos) (novo, 26/10)
+- [x] (27/10/2026) Quadril: achado "Aumento do músculo piriforme" (Zhang 2019, PMID 30663080) — validar redação com o Dr. Ian
+- [ ] Punho: tendinopatia/entesopatia e tendinite calcária do FCU no pisiforme — confirmar PMIDs (Wick 2011; Ahuja 2021, DOI 10.1055/s-0041-1736397) e ler texto completo (novo, 27/10)
+- [ ] Quadril: impacto isquiofemoral — obter texto completo de Wu 2022 (PMID 36611431) e valores de corte do espaço isquiofemoral (novo, 27/10)

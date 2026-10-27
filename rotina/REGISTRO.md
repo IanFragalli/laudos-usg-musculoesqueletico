@@ -74,3 +74,9 @@
 - Fila de push: patches 001 (23/10), 002 (24/10) e 003 (25/10) aplicados sobre a main (c6c4b31) com `git am`; integridade OK (13 segmentos, 39 catálogos).
 - Busca (Consensus/PubMed) sobre roturas do subescapular à US: fontes com resumos lidos, mas sem texto completo (PMC bloqueado) e sem PMIDs confirmados → nenhum conteúdo clínico inserido no app; proposta em PENDENTE_REVISAO e referências em REFERENCIAS (marcadas "a confirmar").
 - Nenhuma alteração em `index.html`. Testes: `verificar_integridade.js` OK; abertura em Chromium headless sem erros de console.
+
+## 27/10/2026 (terça — conteúdo clínico: punho/mão, quadril/coxa)
+- Fila de push: os 4 patches pendentes (001–004) já estavam contidos na main (e81c624, push de 26/10); nada a reaplicar. Fila do Projeto zerada.
+- Quadril: novo achado **Aumento do músculo piriforme** (face posterior), com dx e medida opcional, sem limiar numérico. Fonte: Zhang 2019, Muscle Nerve, PMID 30663080 (texto completo lido).
+- Punho (FCU no pisiforme) e quadril (impacto isquiofemoral): fontes encontradas, mas sem PMID/texto completo → não inseridos; propostas em PENDENTE_REVISAO e referências em REFERENCIAS ("a confirmar").
+- Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos); Chromium headless — Quadril com o novo achado marcado (aparece no relatório e na Impressão), varredura dos 13 segmentos — 0 erros de console.
