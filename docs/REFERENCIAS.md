@@ -59,3 +59,8 @@ Fontes localizadas via Consensus (resumos lidos; PMID/DOI **a confirmar** — a 
 ## Quadril — outros temas buscados em 27/10/2026 — NÃO aplicados
 - Wu WT et al. Ischiofemoral Impingement Syndrome: Clinical and Imaging/Guidance Issues with Special Focus on Ultrasonography. Diagnostics 2022. PMID 36611431 (resumo lido; PubMed/PMC bloqueados para leitura do texto completo). Resumo: a US mede o espaço isquiofemoral de forma comparável à RM e avalia a integridade dos músculos glúteos profundos; sem valores de corte obtidos → não aplicado.
 - Rajvanshi U et al. Diagnostic Accuracy of Ultrasonography for the Evaluation of Proximal Hamstring Injuries. Br J Radiol 2025 (resumo lido; n=50; sensibilidade 91,2%, especificidade 81,2% vs RM; PMID a confirmar). Contexto de acurácia; o app já tem achados de isquiotibiais proximais.
+
+## Joelho/tornozelo — busca de 28/10/2026 — NÃO aplicado ao app
+- Pękala PA, Mizia E, Mann MR, Wagner-Olszewska I, Mostowy M, Tatoń G, Domżalski M. The popliteofibular ligament: a cadaveric ultrasound study. Skeletal Radiol 2022;51(1):183–189. PMID 34146118; DOI 10.1007/s00256-021-03813-9 (texto lido; estudo cadavérico, sem critérios de lesão).
+- Lee KT, Kim JB, Park YU, Jegal H, Chon JG, Lee JG. Ultrasonographic Evaluation of Flexor Hallucis Longus Tenosynovitis in Sports Players. Korean J Sports Med 2013;31(2):51-54. DOI 10.5763/kjsm.2013.31.2.51 (texto lido; PMID a confirmar).
+- Mikkelsen P, Andersen A, Shih HJS, Rowley KM, Kulig K. Flexor hallucis longus tendon morphology in dancers clinically diagnosed with tendinopathy. J Ultrasound 2023. DOI 10.1007/s40477-023-00793-5 (texto lido; PMID e periódico a confirmar; sem cortes).
