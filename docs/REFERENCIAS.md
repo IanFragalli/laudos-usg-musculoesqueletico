@@ -64,3 +64,9 @@ Fontes localizadas via Consensus (resumos lidos; PMID/DOI **a confirmar** — a 
 - Pękala PA, Mizia E, Mann MR, Wagner-Olszewska I, Mostowy M, Tatoń G, Domżalski M. The popliteofibular ligament: a cadaveric ultrasound study. Skeletal Radiol 2022;51(1):183–189. PMID 34146118; DOI 10.1007/s00256-021-03813-9 (texto lido; estudo cadavérico, sem critérios de lesão).
 - Lee KT, Kim JB, Park YU, Jegal H, Chon JG, Lee JG. Ultrasonographic Evaluation of Flexor Hallucis Longus Tenosynovitis in Sports Players. Korean J Sports Med 2013;31(2):51-54. DOI 10.5763/kjsm.2013.31.2.51 (texto lido; PMID a confirmar).
 - Mikkelsen P, Andersen A, Shih HJS, Rowley KM, Kulig K. Flexor hallucis longus tendon morphology in dancers clinically diagnosed with tendinopathy. J Ultrasound 2023. DOI 10.1007/s40477-023-00793-5 (texto lido; PMID e periódico a confirmar; sem cortes).
+
+## Rotinas de exame — 29/10/2026 (lembrete técnico no console; sem conteúdo em laudo)
+- Martinoli C (ed.; ESSR Ultrasound Subcommittee). Musculoskeletal ultrasound: technical guidelines. Insights Imaging 2010;1(3):99–141. DOI 10.1007/s13244-010-0032-9 (DOI confirmado no Crossref; texto completo NÃO lido — PMC bloqueado; usado só como referência geral de protocolo).
+- Jacobson JA. Shoulder US: anatomy, technique, and scanning pitfalls. Radiology 2011;260(1):6–16. DOI 10.1148/radiol.11101082 (resumo lido: exame orientado por protocolo; anisotropia como armadilha).
+- Pirri C et al. The (ProteUS) Anisotropy Effect in Deep Fascia Ultrasonography: impact of probe angulation on echogenicity and thickness. Life 2025 (resumo lido; PMID/DOI a confirmar).
+- Ricci V et al. EURO-MUSCULUS/USPRM Dynamic Ultrasound Protocols for Shoulder. Am J Phys Med Rehabil 2021 (resumo lido; PMID/DOI a confirmar).

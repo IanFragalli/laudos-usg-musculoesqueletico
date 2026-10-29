@@ -85,3 +85,9 @@
 - Fila de push: o patch 001 (piriforme, 27/10) já estava contido na main (commits 2f7b627/e28e83e); nada a reaplicar. Fila do Projeto zerada.
 - Busca: ligamento popliteofibular/canto posterolateral (Pękala 2022, PMID 34146118) e tenossinovite do FLH (Lee 2013; Mikkelsen 2023). Nenhuma fonte com critérios patológicos confirmados (PMIDs ausentes / sem cortes validados) → nenhum conteúdo clínico inserido no app; propostas em PENDENTE_REVISAO e referências em REFERENCIAS.
 - Nenhuma alteração em `index.html`. Testes: `verificar_integridade.js` OK; Chromium headless sem erros de console.
+
+## 29/10/2026 (quinta — rotinas de exame)
+- Fila de push: patch 001 (28/10, só documentação) reaplicado sobre a main (e28e83e) com `git am`.
+- Novo **Lembrete técnico do exame** (painel recolhível no console, não vai ao laudo nem à impressão): sequência fixa de varredura, anisotropia, padronização da angulação ao medir/comparar, manobras dinâmicas. Fontes: Martinoli 2010 (ESSR, DOI 10.1007/s13244-010-0032-9, texto não lido), Jacobson 2011 (DOI 10.1148/radiol.11101082), Pirri 2025, Ricci 2021 (resumos).
+- Checklist por segmento NÃO feito: sem texto completo de protocolo → PENDENTE_REVISAO.
+- Testes: `verificar_integridade.js` OK; Chromium headless 1400 e 390 px, 13 segmentos com 1º item alterado, painel aberto — 0 erros de console, sem rolagem horizontal.
