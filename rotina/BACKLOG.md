@@ -30,3 +30,5 @@
 - [ ] Quadril: impacto isquiofemoral — obter texto completo de Wu 2022 (PMID 36611431) e valores de corte do espaço isquiofemoral (novo, 27/10)
 - [ ] Tornozelo: achado "Tenossinovite do FLH" separado e/ou espessura >3 mm (Lee 2013) — aguardar decisão do Dr. Ian e PMID (novo, 28/10)
 - [ ] Joelho: item de rotina de exame com referência anatômica do ligamento popliteofibular (Pękala 2022, PMID 34146118) — aguardar decisão (novo, 28/10)
+- [x] (30/10/2026) Botão "Copiar texto" (laudo em texto simples) e "Novo paciente" (limpa identificação)
+- [ ] Exportar laudo em Word (.docx) com cabeçalho do serviço — avaliar gerar .doc via HTML offline, sem dependências (novo, 30/10)

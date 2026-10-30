@@ -91,3 +91,10 @@
 - Novo **Lembrete técnico do exame** (painel recolhível no console, não vai ao laudo nem à impressão): sequência fixa de varredura, anisotropia, padronização da angulação ao medir/comparar, manobras dinâmicas. Fontes: Martinoli 2010 (ESSR, DOI 10.1007/s13244-010-0032-9, texto não lido), Jacobson 2011 (DOI 10.1148/radiol.11101082), Pirri 2025, Ricci 2021 (resumos).
 - Checklist por segmento NÃO feito: sem texto completo de protocolo → PENDENTE_REVISAO.
 - Testes: `verificar_integridade.js` OK; Chromium headless 1400 e 390 px, 13 segmentos com 1º item alterado, painel aberto — 0 erros de console, sem rolagem horizontal.
+
+## 30/10/2026 (sexta — funcionalidades)
+- Fila de push: patches 001 (28/10) e 002 (29/10) reaplicados sobre a main (e28e83e) com `git am`; integridade OK (13 segmentos, 39 catálogos).
+- Novo botão **Copiar texto** (barra superior): copia o laudo em texto simples (título, identificação, relatório, observação, comparação e impressão) para colar em prontuário/RIS; usa a área de transferência local do navegador (com alternativa `execCommand`) — nenhum dado é enviado a servidores. Aviso por leitor de tela (`aria-live`).
+- Novo botão **Novo paciente**: limpa paciente, datas e solicitante sem apagar o laudo em edição (boa prática de privacidade entre exames).
+- Testes (Chromium headless/Playwright, 1400 e 390 px): 13 segmentos em laudo normal e alterado (1º achado marcado + comparação), cópia verificada lendo a área de transferência, Novo paciente — 0 erros de console, sem rolagem horizontal.
+- Fontes: nenhum conteúdo clínico novo (apenas funcionalidade).
