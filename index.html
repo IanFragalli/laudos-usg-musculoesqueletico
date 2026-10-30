@@ -297,6 +297,7 @@ mark.hit{background:#FFF3C4;color:inherit;border-radius:2px;padding:0 1px}
     <button class="btn" id="reset" type="button">Tudo normal</button>
     <button class="btn" id="novoPac" type="button" title="Limpa paciente, datas e solicitante (o laudo permanece)">Novo paciente</button>
     <button class="btn" id="copiar" type="button" title="Copia o laudo como texto simples (nada é enviado a servidores)">Copiar texto</button>
+    <button class="btn" id="baixarDoc" type="button" title="Baixa o laudo como documento do Word (.doc), gerado no próprio navegador">Baixar Word</button>
     <span class="sr" id="avisoBar" role="status" aria-live="polite"></span>
     <button class="btn primary" id="imprimir" type="button">Imprimir / PDF</button>
   </div>
@@ -1074,6 +1075,20 @@ $("#copiar").onclick = async () => {
   avisoBar.textContent = ok ? "Laudo copiado como texto." : "Não foi possível copiar; use Imprimir / PDF.";
   const b = $("#copiar"), r = b.textContent; b.textContent = ok ? "Copiado ✓" : "Falhou";
   setTimeout(() => { b.textContent = r; }, 1800);
+};
+/* exporta a folha como .doc (HTML aceito pelo Word); gerado localmente, sem enviar dados a servidores */
+$("#baixarDoc").onclick = () => {
+  const clone = $("#sheet").cloneNode(true);
+  clone.querySelectorAll(".marca").forEach(e => e.remove());
+  const css = "body{font-family:Calibri,Arial,sans-serif;font-size:11pt;color:#000}table{border-collapse:collapse;width:100%}td{vertical-align:top}" +
+    "img{max-width:100%}h2{font-size:14pt;margin:0}p{margin:0}.lbl{font-weight:bold;text-transform:uppercase;margin-top:10pt}.ex-title{font-weight:bold;text-align:center;font-size:13pt;margin:10pt 0}" +
+    ".n{font-weight:bold}.blk{font-weight:bold;margin-top:8pt}";
+  const html = "<html xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:w=\"urn:schemas-microsoft-com:office:word\"><head><meta charset=\"utf-8\"><title>Laudo</title><style>" + css + "</style></head><body>" + clone.innerHTML + "</body></html>";
+  const nome = ("laudo-" + (ident.pac || "paciente")).normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-zA-Z0-9]+/g, "-").replace(/^-|-$/g, "").toLowerCase() + ".doc";
+  const url = URL.createObjectURL(new Blob(["﻿", html], { type: "application/msword" }));
+  const a = el("a"); a.href = url; a.download = nome; document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 2000);
+  avisoBar.textContent = "Documento Word baixado.";
 };
 $("#imprimir").onclick = () => window.print();
 addEventListener("resize", ajustarZoom);
