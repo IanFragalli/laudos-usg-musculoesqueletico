@@ -32,3 +32,5 @@
 - [ ] Joelho: item de rotina de exame com referência anatômica do ligamento popliteofibular (Pękala 2022, PMID 34146118) — aguardar decisão (novo, 28/10)
 - [x] (30/10/2026) Botão "Copiar texto" (laudo em texto simples) e "Novo paciente" (limpa identificação)
 - [x] (30/10/2026) Exportar laudo em Word: botão "Baixar Word" gera .doc (HTML aceito pelo Word) offline, com cabeçalho do serviço. Falta validar a aparência no Word do Dr. Ian e, se desejado, .docx nativo
+- [x] (30/10/2026) Atalhos Alt+Shift+C/W/N (copiar, Word, novo paciente)
+- [ ] Revisar impressão em papel (A4) com um laudo longo real — validar quebra de página e timbrado (Dr. Ian)

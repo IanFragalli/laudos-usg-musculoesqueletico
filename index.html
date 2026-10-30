@@ -295,9 +295,9 @@ mark.hit{background:#FFF3C4;color:inherit;border-radius:2px;padding:0 1px}
   <div class="act">
     <div class="field"><label for="timb">Cabeçalho</label><select id="timb"></select></div>
     <button class="btn" id="reset" type="button">Tudo normal</button>
-    <button class="btn" id="novoPac" type="button" title="Limpa paciente, datas e solicitante (o laudo permanece)">Novo paciente</button>
-    <button class="btn" id="copiar" type="button" title="Copia o laudo como texto simples (nada é enviado a servidores)">Copiar texto</button>
-    <button class="btn" id="baixarDoc" type="button" title="Baixa o laudo como documento do Word (.doc), gerado no próprio navegador">Baixar Word</button>
+    <button class="btn" id="novoPac" type="button" aria-keyshortcuts="Alt+Shift+N" title="Limpa paciente, datas e solicitante (o laudo permanece) [Alt+Shift+N]">Novo paciente</button>
+    <button class="btn" id="copiar" type="button" aria-keyshortcuts="Alt+Shift+C" title="Copia o laudo como texto simples (nada é enviado a servidores) [Alt+Shift+C]">Copiar texto</button>
+    <button class="btn" id="baixarDoc" type="button" aria-keyshortcuts="Alt+Shift+W" title="Baixa o laudo como documento do Word (.doc), gerado no próprio navegador [Alt+Shift+W]">Baixar Word</button>
     <span class="sr" id="avisoBar" role="status" aria-live="polite"></span>
     <button class="btn primary" id="imprimir" type="button">Imprimir / PDF</button>
   </div>
@@ -972,6 +972,12 @@ addEventListener("keydown", e => {
       ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k")) {
     e.preventDefault(); busca.focus(); busca.select();
   }
+});
+/* atalhos da barra (Alt+Shift+C copiar, W Word, N novo paciente); usa e.code para independer do teclado/Option do Mac */
+const ATALHOS = { KeyC: "#copiar", KeyW: "#baixarDoc", KeyN: "#novoPac" };
+addEventListener("keydown", e => {
+  if (!(e.altKey && e.shiftKey) || e.ctrlKey || e.metaKey || !ATALHOS[e.code]) return;
+  e.preventDefault(); $(ATALHOS[e.code]).click();
 });
 mod_.onchange = () => { mi = +mod_.value; montarConsole(); render(); };
 lado.onchange = () => { estado().lado = lado.value; montarConsole(); render(); };
