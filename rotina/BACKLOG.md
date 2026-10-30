@@ -4,7 +4,7 @@
 - [ ] Impressão diagnóstica automática coerente com os achados marcados
 - [ ] Classificações usuais por estrutura (ex.: manguito rotador, tendinopatias, meniscos, ligamentos)
 - [x] (16/10/2026) Campo de comparação com exame anterior
-- [~] Exportar laudo em PDF/Word com cabeçalho do serviço (seletor de cabeçalho pronto em 18/10; falta exportação Word)
+- [x] (30/10/2026) Exportar laudo em PDF/Word com cabeçalho do serviço (seletor de cabeçalho 18/10; Imprimir/PDF; Baixar Word .doc 30/10)
 - [x] (23/10/2026) Busca rápida de achados/frases (por segmento; atalho / ou Ctrl+K)
 - [~] Modo celular/tablet e impressão otimizada (celular/tablet feito em 23/10; falta revisar a impressão em papel)
 - [~] Biblioteca de armadilhas técnicas e variantes anatômicas — anisotropia incluída no lembrete técnico (29/10); demais aguardam fonte
@@ -31,4 +31,4 @@
 - [ ] Tornozelo: achado "Tenossinovite do FLH" separado e/ou espessura >3 mm (Lee 2013) — aguardar decisão do Dr. Ian e PMID (novo, 28/10)
 - [ ] Joelho: item de rotina de exame com referência anatômica do ligamento popliteofibular (Pękala 2022, PMID 34146118) — aguardar decisão (novo, 28/10)
 - [x] (30/10/2026) Botão "Copiar texto" (laudo em texto simples) e "Novo paciente" (limpa identificação)
-- [ ] Exportar laudo em Word (.docx) com cabeçalho do serviço — avaliar gerar .doc via HTML offline, sem dependências (novo, 30/10)
+- [x] (30/10/2026) Exportar laudo em Word: botão "Baixar Word" gera .doc (HTML aceito pelo Word) offline, com cabeçalho do serviço. Falta validar a aparência no Word do Dr. Ian e, se desejado, .docx nativo

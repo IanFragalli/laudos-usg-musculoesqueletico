@@ -98,3 +98,9 @@
 - Novo botão **Novo paciente**: limpa paciente, datas e solicitante sem apagar o laudo em edição (boa prática de privacidade entre exames).
 - Testes (Chromium headless/Playwright, 1400 e 390 px): 13 segmentos em laudo normal e alterado (1º achado marcado + comparação), cópia verificada lendo a área de transferência, Novo paciente — 0 erros de console, sem rolagem horizontal.
 - Fontes: nenhum conteúdo clínico novo (apenas funcionalidade).
+
+## 30/10/2026 (sexta — 2º ciclo, funcionalidades)
+- Fila de push: os patches 001–003 (28–30/10) já estavam contidos na main (push de 30/10, 7265fab); nada a reaplicar. Fila do Projeto zerada.
+- Novo botão **Baixar Word** (barra superior): baixa o laudo (cabeçalho do serviço, identificação, relatório, impressão, comparação, assinatura) como `.doc` em HTML aceito pelo Word, gerado no navegador (Blob local); sem a marca d'água; nome do arquivo derivado do paciente (sem acentos). Nenhum dado sai do computador. Aparência no Word ainda a validar pelo Dr. Ian.
+- Testes (Chromium headless/Playwright): 13 segmentos × 2 cabeçalhos × laudo normal/alterado = 52 downloads, conteúdo conferido (paciente, título, sem marca d'água) — 0 erros de console; `verificar_integridade.js` OK.
+- Fontes: nenhum conteúdo clínico novo (apenas funcionalidade).
