@@ -295,6 +295,9 @@ mark.hit{background:#FFF3C4;color:inherit;border-radius:2px;padding:0 1px}
   <div class="act">
     <div class="field"><label for="timb">Cabeçalho</label><select id="timb"></select></div>
     <button class="btn" id="reset" type="button">Tudo normal</button>
+    <button class="btn" id="novoPac" type="button" title="Limpa paciente, datas e solicitante (o laudo permanece)">Novo paciente</button>
+    <button class="btn" id="copiar" type="button" title="Copia o laudo como texto simples (nada é enviado a servidores)">Copiar texto</button>
+    <span class="sr" id="avisoBar" role="status" aria-live="polite"></span>
     <button class="btn primary" id="imprimir" type="button">Imprimir / PDF</button>
   </div>
 </header>
@@ -1037,6 +1040,40 @@ $("#reset").onclick = () => {
   const s = estado();
   s.itens.forEach(it => { it.prev = it.sel.slice(); it.sel = []; it.livres = []; it.normal = true; });
   s.extras = []; s.slots = {}; s.med = {}; s.fill = {}; s.editando = {}; s.imprManual = null; s.recs = []; montarChipsRec(); montarConsole(); render();
+};
+$("#novoPac").onclick = () => {
+  ["pac", "dt", "nasc", "sol"].forEach(k => { ident[k] = ""; $("#" + k).value = ""; });
+  render(); avisoBar.textContent = "Identificação do paciente limpa.";
+  $("#pac").focus();
+};
+/* laudo em texto simples (para colar em prontuário/RIS); montado a partir da folha */
+function textoDoLaudo() {
+  const L = [], tx = e => e.textContent.replace(/\s+/g, " ").trim();
+  const linhaTxt = e => { const n = e.querySelector(".n"), t = e.children[1] || e; return ((n && tx(n)) ? tx(n) + " " : "") + tx(t); };
+  const campo = (rot, id) => { const e = document.getElementById(id); if (e && tx(e)) L.push(rot + ": " + tx(e)); };
+  L.push(tx(oTtl).toUpperCase());
+  campo("Paciente", "oPac"); campo("Nascimento", "oNasc"); campo("Data", "oDt"); campo("Médico solicitante", "oSol");
+  L.push("");
+  [...oRel.children].forEach(e => L.push(e.classList.contains("blk") ? "\n" + tx(e) : linhaTxt(e)));
+  if (oObs.textContent.trim()) L.push("", tx(oObs));
+  if (oCompBox.style.display !== "none") { L.push("", "COMPARAÇÃO"); [...oComp.children].forEach(e => L.push(linhaTxt(e))); }
+  L.push("", "IMPRESSÃO"); [...oImp.children].forEach(e => L.push(linhaTxt(e)));
+  return L.join("\n").replace(/\n{3,}/g, "\n\n").trim() + "\n";
+}
+$("#copiar").onclick = async () => {
+  const t = textoDoLaudo();
+  let ok = false;
+  try { await navigator.clipboard.writeText(t); ok = true; } catch (e) {}
+  if (!ok) {
+    const ta = el("textarea"); ta.value = t; ta.setAttribute("readonly", "");
+    ta.style.cssText = "position:fixed;left:-9999px;top:0";
+    document.body.appendChild(ta); ta.select();
+    try { ok = document.execCommand("copy"); } catch (e) {}
+    ta.remove();
+  }
+  avisoBar.textContent = ok ? "Laudo copiado como texto." : "Não foi possível copiar; use Imprimir / PDF.";
+  const b = $("#copiar"), r = b.textContent; b.textContent = ok ? "Copiado ✓" : "Falhou";
+  setTimeout(() => { b.textContent = r; }, 1800);
 };
 $("#imprimir").onclick = () => window.print();
 addEventListener("resize", ajustarZoom);
