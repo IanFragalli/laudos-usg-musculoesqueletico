@@ -106,3 +106,8 @@
 - Fontes: nenhum conteúdo clínico novo (apenas funcionalidade).
 - Atalhos de teclado na barra: **Alt+Shift+C** (Copiar texto), **Alt+Shift+W** (Baixar Word) e **Alt+Shift+N** (Novo paciente), com dica no botão e `aria-keyshortcuts`. Funcionam também com o foco em campos de texto; não interferem na busca (`/`, Ctrl/Cmd+K).
 - Testes (Chromium headless/Playwright, 1400 e 390 px): 13 segmentos com Baixar Word por atalho (nome do arquivo sem acentos), cópia e Novo paciente por atalho — 0 erros de console, sem rolagem horizontal. Obs.: o Chromium limita downloads automáticos em sequência rápida (artefato do teste; usar ~0,7 s entre eles).
+
+## 31/10/2026 (sábado — revisão)
+- Fila de push: patches 001 (Baixar Word) e 002 (atalhos), de 30/10, já estavam contidos na main (d332cbc); nada a reaplicar. Fila do Projeto zerada.
+- Revisão de terminologia: padronizado "hipoecogênico/a" (3 ocorrências de "hipoecoico/a"). Demais termos conferidos sem divergência. PENDENTE_REVISAO revisado: nenhum item resolvido sem decisão do Dr. Ian.
+- Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos); Chromium headless carrega sem erros de console. Fontes: nenhum conteúdo clínico novo.

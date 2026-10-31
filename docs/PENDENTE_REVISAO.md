@@ -63,3 +63,8 @@
 ## Quinta-feira (29/10/2026) — rotinas de exame
 - **Inserido (console, fora do laudo): "Lembrete técnico do exame"** — 4 lembretes genéricos (sequência de varredura fixa; reavaliar hipoecogenicidade por anisotropia; padronizar angulação ao medir/comparar; manobras dinâmicas se indicado). Dr. Ian: validar redação. Baseado em resumos (Jacobson 2011; Pirri 2025; Ricci 2021) e no guideline ESSR (Martinoli 2010, texto não lido).
 - **Proposta (NÃO inserida) — checklist de varredura segmentar** (ordem de estruturas por segmento): exige texto completo do ESSR (Martinoli 2010) ou protocolos EURO-MUSCULUS por segmento. Se o Dr. Ian fornecer o PDF/protocolo próprio do serviço, implementar.
+
+## Sábado (31/10/2026) — revisão de terminologia
+- Corrigido: "hipoecoico/hipoecoica" → "hipoecogênico/hipoecogênica" (3 ocorrências: lembrete técnico, cisto paralabral do ombro, neuroma de Morton), padronizando com as demais 32 ocorrências do app. Sem conteúdo clínico novo.
+- Conferido sem divergência: "rotura" (sem "ruptura"), "epicôndilo", "ao Doppler"/"ao estudo Doppler" (ambos aceitos).
+- Seguem em aberto todos os itens acima (limiar do ulnar; subescapular; FCU/pisiforme; impacto isquiofemoral; FLH; checklist por segmento; `.docx` sem os achados novos). Nenhuma fonte nova nesta data.
