@@ -69,3 +69,8 @@
 - Conferido sem divergência: "rotura" (sem "ruptura"), "epicôndilo", "ao Doppler"/"ao estudo Doppler" (ambos aceitos).
 - Seguem em aberto todos os itens acima (limiar do ulnar; subescapular; FCU/pisiforme; impacto isquiofemoral; FLH; checklist por segmento; `.docx` sem os achados novos). Nenhuma fonte nova nesta data.
 - (31/10/2026, 2º ciclo) Terminologia de ecogenicidade: o app usa "hiper/hipo/isoecogênico" e "anecoico/a". Ambas as formas são correntes em português; decidir se o Dr. Ian prefere "anecogênico/a" por simetria (34 ocorrências). Não alterado.
+
+## Domingo (01/11/2026) — busca de evidências — nada inserido no app
+- **Nervo ulnar (limiar no cotovelo)**: a busca localizou a revisão sistemática/meta-análise "Sonographic normal values for the cross-sectional area of the ulnar nerve" (PMC10063700) e "Ultrasonographic Evaluation of Ulnar Neuropathy at the Elbow: A Systematic Review and Meta-Analysis" (J Islamabad Med Dent Coll, kne-publishing). O PMC bloqueou a leitura (verificação anti-robô), então autores, ano, PMID e valores NÃO foram lidos. Não alterado o limiar atual do app. Dr. Ian: se puder fornecer o PDF desses artigos, o limiar do ulnar pode ser conferido.
+- **Espaço isquiofemoral (US)**: fontes candidatas apareceram (PMC4900207, PMC6658654, PMC11837867, PMC9818255, PMC10718605), todas bloqueadas para leitura; nenhum valor de corte confirmado. Segue pendente (ver Wu 2022, PMID 36611431).
+- Nenhuma proposta nova pronta para decisão; pedido ao Dr. Ian: fornecer PDFs (ulnar e isquiofemoral) para destravar os dois itens.

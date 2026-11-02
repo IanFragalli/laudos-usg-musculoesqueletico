@@ -112,3 +112,8 @@
 - Revisão de terminologia: padronizado "hipoecogênico/a" (3 ocorrências de "hipoecoico/a"). Demais termos conferidos sem divergência. PENDENTE_REVISAO revisado: nenhum item resolvido sem decisão do Dr. Ian.
 - Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos); Chromium headless carrega sem erros de console. Fontes: nenhum conteúdo clínico novo.
 - 2º ciclo de 31/10 (sábado): patch 001 (31/10) reaplicado sobre a main (d332cbc) com `git am`. Conferência extra de consistência: "hiperecogênico", "hipoecogênico", "isoecogênico" padronizados; "anecoico/a" (34) mantido por ser forma corrente (variante "anecogênico" aceita, sem ocorrências); "rotura" (126, sem "ruptura"), "supraespinal/infraespinal" e "subescapular" sem divergência. `verificar_integridade.js` OK; Chromium headless carrega sem erros de console. Sem conteúdo clínico novo.
+
+## 01/11/2026 (domingo — busca de evidências)
+- Fila de push: patch 001 (31/10) aplicado com `git am` sobre a main (d332cbc); patch 002 (só documentação) reaplicado manualmente (mesmo conteúdo).
+- Busca: CSA do nervo ulnar no cotovelo (meta-análises) e espaço isquiofemoral à US. PMC bloqueado para leitura; nenhum valor lido/confirmado → nenhuma alteração em `index.html`. Candidatas registradas em REFERENCIAS ("a confirmar") e pedido de PDFs em PENDENTE_REVISAO.
+- Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos); Chromium headless carrega sem erros de console.

@@ -70,3 +70,8 @@ Fontes localizadas via Consensus (resumos lidos; PMID/DOI **a confirmar** — a 
 - Jacobson JA. Shoulder US: anatomy, technique, and scanning pitfalls. Radiology 2011;260(1):6–16. DOI 10.1148/radiol.11101082 (resumo lido: exame orientado por protocolo; anisotropia como armadilha).
 - Pirri C et al. The (ProteUS) Anisotropy Effect in Deep Fascia Ultrasonography: impact of probe angulation on echogenicity and thickness. Life 2025 (resumo lido; PMID/DOI a confirmar).
 - Ricci V et al. EURO-MUSCULUS/USPRM Dynamic Ultrasound Protocols for Shoulder. Am J Phys Med Rehabil 2021 (resumo lido; PMID/DOI a confirmar).
+
+## Busca de 01/11/2026 (domingo) — candidatas, NÃO lidas, NÃO aplicadas ao app
+- "Sonographic normal values for the cross-sectional area of the ulnar nerve: a systematic review and meta-analysis" — PMC10063700 (autores, periódico, ano e PMID a confirmar; texto bloqueado).
+- "Ultrasonographic Evaluation of Ulnar Neuropathy at the Elbow: A Systematic Review and Meta-Analysis" — J Islamabad Med Dent Coll (kne-publishing, artigo 10460) (autores, ano e PMID a confirmar; texto não lido).
+- Espaço isquiofemoral à US: PMC4900207, PMC6658654, PMC11837867, PMC9818255, PMC10718605 (títulos/valores não lidos; a confirmar).
