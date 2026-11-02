@@ -68,3 +68,4 @@
 - Corrigido: "hipoecoico/hipoecoica" → "hipoecogênico/hipoecogênica" (3 ocorrências: lembrete técnico, cisto paralabral do ombro, neuroma de Morton), padronizando com as demais 32 ocorrências do app. Sem conteúdo clínico novo.
 - Conferido sem divergência: "rotura" (sem "ruptura"), "epicôndilo", "ao Doppler"/"ao estudo Doppler" (ambos aceitos).
 - Seguem em aberto todos os itens acima (limiar do ulnar; subescapular; FCU/pisiforme; impacto isquiofemoral; FLH; checklist por segmento; `.docx` sem os achados novos). Nenhuma fonte nova nesta data.
+- (31/10/2026, 2º ciclo) Terminologia de ecogenicidade: o app usa "hiper/hipo/isoecogênico" e "anecoico/a". Ambas as formas são correntes em português; decidir se o Dr. Ian prefere "anecogênico/a" por simetria (34 ocorrências). Não alterado.
