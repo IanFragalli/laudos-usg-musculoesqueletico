@@ -74,3 +74,7 @@
 - **Nervo ulnar (limiar no cotovelo)**: a busca localizou a revisão sistemática/meta-análise "Sonographic normal values for the cross-sectional area of the ulnar nerve" (PMC10063700) e "Ultrasonographic Evaluation of Ulnar Neuropathy at the Elbow: A Systematic Review and Meta-Analysis" (J Islamabad Med Dent Coll, kne-publishing). O PMC bloqueou a leitura (verificação anti-robô), então autores, ano, PMID e valores NÃO foram lidos. Não alterado o limiar atual do app. Dr. Ian: se puder fornecer o PDF desses artigos, o limiar do ulnar pode ser conferido.
 - **Espaço isquiofemoral (US)**: fontes candidatas apareceram (PMC4900207, PMC6658654, PMC11837867, PMC9818255, PMC10718605), todas bloqueadas para leitura; nenhum valor de corte confirmado. Segue pendente (ver Wu 2022, PMID 36611431).
 - Nenhuma proposta nova pronta para decisão; pedido ao Dr. Ian: fornecer PDFs (ulnar e isquiofemoral) para destravar os dois itens.
+
+## Segunda-feira (02/11/2026) — ombro/cotovelo — nada inserido no app
+- **Subescapular**: nova evidência (resumos) em REFERENCIAS mostra sensibilidade da US muito variável (39%–78%) e dependente do operador; continua sem critérios descritivos lidos em texto completo. A decisão de criar o achado "Rotura do subescapular (Lafosse)" e/ou uma nota de limitação segue com o Dr. Ian. PMIDs a confirmar.
+- **Cotovelo — nervo interósseo posterior/túnel radial**: busca não concluída (limite de requisições do serviço de busca); segue no backlog.

@@ -117,3 +117,8 @@
 - Fila de push: patch 001 (31/10) aplicado com `git am` sobre a main (d332cbc); patch 002 (só documentação) reaplicado manualmente (mesmo conteúdo).
 - Busca: CSA do nervo ulnar no cotovelo (meta-análises) e espaço isquiofemoral à US. PMC bloqueado para leitura; nenhum valor lido/confirmado → nenhuma alteração em `index.html`. Candidatas registradas em REFERENCIAS ("a confirmar") e pedido de PDFs em PENDENTE_REVISAO.
 - Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos); Chromium headless carrega sem erros de console.
+
+## 02/11/2026 (segunda — conteúdo clínico: ombro e cotovelo)
+- Fila de push: patch 001 (31/10) aplicado com `git am`; patches 002 e 003 (só documentação) reaplicados manualmente (mesmo conteúdo) sobre a main (d332cbc).
+- Busca: acurácia da US no subescapular (Zhu 2021; Narasimhan 2016; Saremi 2023; Toprak 2020; Koluman 2026 — resumos lidos). Sem critérios descritivos e sem PMIDs confirmados → nenhuma alteração em `index.html`; evidência registrada em REFERENCIAS e decisão pendente em PENDENTE_REVISAO. Busca do nervo interósseo posterior bloqueada por limite de requisições.
+- Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos); Chromium headless carrega sem erros de console. Nenhuma alteração em `index.html`.

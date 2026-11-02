@@ -75,3 +75,11 @@ Fontes localizadas via Consensus (resumos lidos; PMID/DOI **a confirmar** — a 
 - "Sonographic normal values for the cross-sectional area of the ulnar nerve: a systematic review and meta-analysis" — PMC10063700 (autores, periódico, ano e PMID a confirmar; texto bloqueado).
 - "Ultrasonographic Evaluation of Ulnar Neuropathy at the Elbow: A Systematic Review and Meta-Analysis" — J Islamabad Med Dent Coll (kne-publishing, artigo 10460) (autores, ano e PMID a confirmar; texto não lido).
 - Espaço isquiofemoral à US: PMC4900207, PMC6658654, PMC11837867, PMC9818255, PMC10718605 (títulos/valores não lidos; a confirmar).
+
+## Ombro — subescapular, evidência adicional (02/11/2026, segunda) — resumos lidos via Consensus; NÃO aplicado ao app
+- Zhu S et al. Ultrasonography Outperforms Magnetic Resonance Imaging in Diagnosing Partial Thickness Subscapularis Tear. Arthroscopy 2021 (n=437, artroscopia como padrão; US: sensibilidade 77,7% geral e 73,8%/especificidade 88,7% em roturas parciais; RM: 49,7% e 38,1%). PMID/DOI a confirmar.
+- Narasimhan R et al. Prevalence of subscapularis tears and accuracy of shoulder ultrasound in pre-operative diagnosis. Int Orthop 2016 (n=236; US sensibilidade 39,5%, especificidade 93,1%; sensibilidade 42,8% em Lafosse 1–2 e 79% em 3–5). PMID/DOI a confirmar.
+- Saremi H, Seifrabiei. Subscapularis tendon tear classification and diagnosis: a systematic review and meta-analysis. Front Surg 2023 (US sensibilidade agrupada 0,39; especificidade 0,93; só 1 estudo de US). PMID/DOI a confirmar.
+- Toprak U et al. Diagnostic accuracy of ultrasound in subscapularis tendon abnormalities and the importance of operator experience. Acta Orthop Traumatol Turc 2020 (concordância US–RM regular para o operador menos experiente, substancial para o experiente). PMID/DOI a confirmar.
+- Koluman A et al. Comparison of Clinical Examination, Ultrasonography, and MRI in partial subscapularis tears. Orthop J Sports Med 2026 (n=46; US dinâmica superior à RM; PMID/DOI a confirmar).
+- Síntese: os resultados são heterogêneos (sensibilidade da US de 39% a 78%), dependentes do operador e do tipo de rotura; nenhum resumo traz critérios ultrassonográficos descritivos para redigir o achado. Reforça a nota de limitação já proposta.
