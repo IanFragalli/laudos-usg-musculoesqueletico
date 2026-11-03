@@ -122,3 +122,8 @@
 - Fila de push: patch 001 (31/10) aplicado com `git am`; patches 002 e 003 (só documentação) reaplicados manualmente (mesmo conteúdo) sobre a main (d332cbc).
 - Busca: acurácia da US no subescapular (Zhu 2021; Narasimhan 2016; Saremi 2023; Toprak 2020; Koluman 2026 — resumos lidos). Sem critérios descritivos e sem PMIDs confirmados → nenhuma alteração em `index.html`; evidência registrada em REFERENCIAS e decisão pendente em PENDENTE_REVISAO. Busca do nervo interósseo posterior bloqueada por limite de requisições.
 - Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos); Chromium headless carrega sem erros de console. Nenhuma alteração em `index.html`.
+
+## 03/11/2026 (terça — conteúdo clínico: punho/mão, quadril/coxa)
+- Fila de push: os patches 001–004 (31/10–02/11) já estavam contidos na main (4a95dee); nada a reaplicar. Fila do Projeto zerada.
+- Busca (FCU/pisiforme: Wick 2011; Ahuja 2021): apenas resultados genéricos, sem PMID/texto completo confirmados; PubMed (E-utilities) bloqueado para leitura automática → nenhum conteúdo clínico inserido. Nenhuma alteração em `index.html`.
+- Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos).

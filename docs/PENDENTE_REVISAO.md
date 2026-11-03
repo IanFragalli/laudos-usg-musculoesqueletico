@@ -78,3 +78,7 @@
 ## Segunda-feira (02/11/2026) — ombro/cotovelo — nada inserido no app
 - **Subescapular**: nova evidência (resumos) em REFERENCIAS mostra sensibilidade da US muito variável (39%–78%) e dependente do operador; continua sem critérios descritivos lidos em texto completo. A decisão de criar o achado "Rotura do subescapular (Lafosse)" e/ou uma nota de limitação segue com o Dr. Ian. PMIDs a confirmar.
 - **Cotovelo — nervo interósseo posterior/túnel radial**: busca não concluída (limite de requisições do serviço de busca); segue no backlog.
+
+## Terça-feira (03/11/2026) — punho/mão e quadril/coxa — nada inserido no app
+- FCU no pisiforme (tendinopatia/entesopatia; tendinite calcária): nova busca não confirmou PMIDs nem texto completo (Wick 2011; Ahuja 2021 seguem "a confirmar"). Pedido: PDFs dos dois artigos para destravar o achado.
+- Impacto isquiofemoral e ulnar: sem fonte nova lida; pendências mantidas.
