@@ -82,3 +82,8 @@
 ## Terça-feira (03/11/2026) — punho/mão e quadril/coxa — nada inserido no app
 - FCU no pisiforme (tendinopatia/entesopatia; tendinite calcária): nova busca não confirmou PMIDs nem texto completo (Wick 2011; Ahuja 2021 seguem "a confirmar"). Pedido: PDFs dos dois artigos para destravar o achado.
 - Impacto isquiofemoral e ulnar: sem fonte nova lida; pendências mantidas.
+
+## Quarta-feira (04/11/2026) — perna/panturrilha — 1 achado inserido
+- **Inserido**: "Coleção interaponeurótica gastrocnêmio-sóleo" (Perna e Panturrilha, Item 2): descreve coleção líquida laminar entre as aponeuroses do gastrocnêmio medial e do sóleo, sem solução de continuidade muscular (Delgado 2002, PMID 12091669, 21,3% dos casos de tennis leg clínico). Medida de espessura é opcional e em branco. Dr. Ian: validar a redação e se prefere "coleção hemática/líquida"; conferir volume/páginas da referência.
+- **Não inserido**: espessuras de coleção que separam rotura parcial (6,8 mm) de completa (9,7 mm) (Kwak 2006; Flecca 2007) — séries pequenas, PMIDs não confirmados [verificar].
+- Joelho e tornozelo/pé: sem fonte nova lida hoje; pendências de 28/10 mantidas (popliteofibular, FLH).

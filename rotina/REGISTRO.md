@@ -127,3 +127,8 @@
 - Fila de push: os patches 001–004 (31/10–02/11) já estavam contidos na main (4a95dee); nada a reaplicar. Fila do Projeto zerada.
 - Busca (FCU/pisiforme: Wick 2011; Ahuja 2021): apenas resultados genéricos, sem PMID/texto completo confirmados; PubMed (E-utilities) bloqueado para leitura automática → nenhum conteúdo clínico inserido. Nenhuma alteração em `index.html`.
 - Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos).
+
+## 04/11/2026 (quarta — conteúdo clínico: joelho, perna/panturrilha, tornozelo/pé)
+- Fila de push: patch 001 (03/11, só documentação) reaplicado manualmente (mesmo conteúdo) sobre a main (4a95dee).
+- Novo achado **Coleção interaponeurótica gastrocnêmio-sóleo** (Perna e Panturrilha, Item 2, com `dx`; sem limiar numérico). Fonte: Delgado 2002 (Radiology, PMID 12091669; resumo lido). Kwak 2006 e Flecca 2007 (resumos) só como contexto — espessuras não inseridas.
+- Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos); Chromium headless 1400 e 390 px, Perna e Panturrilha com "Tudo normal" e com o achado marcado — texto e impressão aparecem, 0 erros de console, sem rolagem horizontal.
