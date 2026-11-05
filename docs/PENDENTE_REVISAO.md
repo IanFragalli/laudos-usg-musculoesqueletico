@@ -87,3 +87,6 @@
 - **Inserido**: "Coleção interaponeurótica gastrocnêmio-sóleo" (Perna e Panturrilha, Item 2): descreve coleção líquida laminar entre as aponeuroses do gastrocnêmio medial e do sóleo, sem solução de continuidade muscular (Delgado 2002, PMID 12091669, 21,3% dos casos de tennis leg clínico). Medida de espessura é opcional e em branco. Dr. Ian: validar a redação e se prefere "coleção hemática/líquida"; conferir volume/páginas da referência.
 - **Não inserido**: espessuras de coleção que separam rotura parcial (6,8 mm) de completa (9,7 mm) (Kwak 2006; Flecca 2007) — séries pequenas, PMIDs não confirmados [verificar].
 - Joelho e tornozelo/pé: sem fonte nova lida hoje; pendências de 28/10 mantidas (popliteofibular, FLH).
+
+## Quinta-feira (05/11/2026) — rotinas de exame
+- Lembrete técnico ampliado com posicionamento do ombro e do joelho (ESSR, PDFs lidos). Conferir ano/citação oficial das diretrizes ESSR [verificar]. Cotovelo, punho, quadril e tornozelo (PDFs ESSR) ainda não lidos: checklist por segmento segue pendente.

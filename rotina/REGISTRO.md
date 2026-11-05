@@ -132,3 +132,8 @@
 - Fila de push: patch 001 (03/11, só documentação) reaplicado manualmente (mesmo conteúdo) sobre a main (4a95dee).
 - Novo achado **Coleção interaponeurótica gastrocnêmio-sóleo** (Perna e Panturrilha, Item 2, com `dx`; sem limiar numérico). Fonte: Delgado 2002 (Radiology, PMID 12091669; resumo lido). Kwak 2006 e Flecca 2007 (resumos) só como contexto — espessuras não inseridas.
 - Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos); Chromium headless 1400 e 390 px, Perna e Panturrilha com "Tudo normal" e com o achado marcado — texto e impressão aparecem, 0 erros de console, sem rolagem horizontal.
+
+## 05/11/2026 (quinta — rotinas de exame)
+- Fila de push: patches 001 (03/11) e 002 (04/11) aplicados com `git am` sobre a main (4a95dee).
+- Lembrete técnico: 2 itens novos (posicionamento do ombro; posicionamento do joelho/estresse em valgo) a partir dos PDFs ESSR de ombro e joelho (lidos). Fonte em REFERENCIAS; citação oficial a verificar.
+- Testes: `verificar_integridade.js` OK; Chromium headless — lembrete aberto com os novos itens, 0 erros de console.
