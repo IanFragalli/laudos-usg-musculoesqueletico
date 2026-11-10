@@ -160,3 +160,8 @@
 - Cotovelo: novo grupo **Nervo interósseo posterior / músculo supinador (túnel radial)** em "Outros achados", com 3 achados (neuropatia compressiva do NIP, gânglio compressivo, atrofia por desnervação do supinador/extensores). Medida opcional do diâmetro AP com comparação contralateral; sem limiar numérico.
 - Fontes (texto completo lido): Kim 2017 (PMID 28494524), Dietz 2016 (PMID 26201950). Ver REFERENCIAS e PENDENTE_REVISAO. Busca sobre nervo supraescapular (ombro): PubMed/PMC bloqueados por captcha, nada lido → nada inserido.
 - Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos); Chromium headless 1400 e 390 px — laudo normal e Cotovelo com os 3 achados marcados (relatório e impressão), 0 erros de console, sem rolagem horizontal.
+
+## 10/11/2026 (terça — conteúdo clínico: punho/mão, quadril/coxa)
+- Fila de push: patches 001–004 (06–09/11) reaplicados sobre a main (5f78aec); o último push foi até 05/11/2026. A reconstrução dos patches 001–003 gerou a mesma árvore (hash do `index.html` idêntico ao dos patches).
+- Novo achado **Espaço isquiofemoral reduzido** (Quadril, face posterior, "Outros achados", com `dx`; medida em branco, sem limiar diagnóstico). Fonte: Wu 2022 (Diagnostics, PMID 36611431; texto completo lido via PMC9818255). Cortes numéricos (RM 15/10 mm; US 2,14 cm) não inseridos [verificar].
+- Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos); Chromium headless 1400 e 390 px — Quadril normal e com o achado marcado (texto e impressão), 0 erros de console, sem rolagem horizontal.

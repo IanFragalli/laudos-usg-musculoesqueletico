@@ -98,3 +98,8 @@
 ## Segunda-feira (09/11/2026) — cotovelo: nervo interósseo posterior
 - Inseridos 3 achados em grupo novo "Nervo interósseo posterior / músculo supinador (túnel radial)" (Kim 2017, PMID 28494524; Dietz 2016, PMID 26201950). Validar a redação com o Dr. Ian. Sem valor de corte: as fontes não o definem (diâmetro AP 1,79 vs 1,02 mm contralateral em série de 10 casos) — por isso a medida é opcional e comparativa com o lado contralateral. Aspecto em "ampulheta" não foi inserido (só citado de outro estudo, não lido). Atrofia do supinador à US baseia-se em 2 casos de Kim 2017.
 - Os achados ficam em "Outros achados" (sem linha própria no modelo normal) para não afirmar exame normal do NIP quando não avaliado. Decidir se deseja uma linha de "NIP/supinador sem alterações" no modelo.
+
+## Terça-feira (10/11/2026) — quadril: impacto isquiofemoral — 1 achado inserido
+- **Inserido (Quadril, face posterior): "Espaço isquiofemoral reduzido"** — texto descritivo com medida em branco (e comparação contralateral opcional), sem limiar diagnóstico no app; conclui "pode estar associado à síndrome do impacto isquiofemoral — correlacionar com dados clínicos; a RM é o método de referência". Fonte: Wu 2022 (PMID 36611431, texto completo lido). Dr. Ian: validar a redação.
+- **Não inserido**: corte ultrassonográfico de 2,14 cm (S 92%/E 68%) e cortes de RM (15 mm / 10 mm) — vêm de estudos primários citados na revisão; conferir os originais [verificar] antes de usar como limiar. Confiabilidade inter-examinador da medida à US foi apenas moderada.
+- Seguem pendentes: FCU/pisiforme (Wick 2011; Ahuja 2021), decisão sobre ulnar e subescapular.

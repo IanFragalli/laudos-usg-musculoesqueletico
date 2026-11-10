@@ -27,7 +27,7 @@
 - [x] (09/11/2026) Cotovelo: túnel radial / NIP — 3 achados inseridos (Kim 2017, PMID 28494524; Dietz 2016, PMID 26201950); validar redação com o Dr. Ian; sem limiar numérico (fontes não definem)
 - [x] (27/10/2026) Quadril: achado "Aumento do músculo piriforme" (Zhang 2019, PMID 30663080) — validar redação com o Dr. Ian
 - [ ] Punho: tendinopatia/entesopatia e tendinite calcária do FCU no pisiforme — confirmar PMIDs (Wick 2011; Ahuja 2021, DOI 10.1055/s-0041-1736397) e ler texto completo (novo, 27/10)
-- [ ] Quadril: impacto isquiofemoral — obter texto completo de Wu 2022 (PMID 36611431) e valores de corte do espaço isquiofemoral (novo, 27/10)
+- [x] (10/11/2026) Quadril: achado "Espaço isquiofemoral reduzido" (Wu 2022, PMID 36611431, texto lido; sem limiar numérico) — validar redação com o Dr. Ian; cortes numéricos de US/RM aguardam conferência dos originais
 - [ ] Tornozelo: achado "Tenossinovite do FLH" separado e/ou espessura >3 mm (Lee 2013) — aguardar decisão do Dr. Ian e PMID (novo, 28/10)
 - [ ] Joelho: item de rotina de exame com referência anatômica do ligamento popliteofibular (Pękala 2022, PMID 34146118) — aguardar decisão (novo, 28/10)
 - [x] (30/10/2026) Botão "Copiar texto" (laudo em texto simples) e "Novo paciente" (limpa identificação)
