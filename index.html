@@ -173,6 +173,7 @@ button{font:inherit;cursor:pointer}
 .dica li{margin:3px 0}
 .dica .fonte{font-family:var(--mono);font-size:10.5px;color:var(--muted);margin:4px 0 2px}
 @media (max-width:760px){.dica{padding-left:12px;padding-right:12px}}
+.aviso-emit{background:#FFF3C4;color:#5A4500;border:1px solid #E0C25A;border-radius:6px;padding:3px 8px;font-size:12px;font-weight:600;align-self:center}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 mark.hit{background:#FFF3C4;color:inherit;border-radius:2px;padding:0 1px}
 .nores{padding:18px 20px;font-size:13px;color:var(--soft);font-style:italic}
@@ -299,6 +300,7 @@ mark.hit{background:#FFF3C4;color:inherit;border-radius:2px;padding:0 1px}
     <button class="btn" id="copiar" type="button" aria-keyshortcuts="Alt+Shift+C" title="Copia o laudo como texto simples (nada é enviado a servidores) [Alt+Shift+C]">Copiar texto</button>
     <button class="btn" id="baixarDoc" type="button" aria-keyshortcuts="Alt+Shift+W" title="Baixa o laudo como documento do Word (.doc), gerado no próprio navegador [Alt+Shift+W]">Baixar Word</button>
     <span class="sr" id="avisoBar" role="status" aria-live="polite"></span>
+    <span class="aviso-emit" id="avisoEmit" hidden></span>
     <button class="btn primary" id="imprimir" type="button">Imprimir / PDF</button>
   </div>
 </header>
@@ -1069,7 +1071,18 @@ function textoDoLaudo() {
   L.push("", "IMPRESSÃO"); [...oImp.children].forEach(e => L.push(linhaTxt(e)));
   return L.join("\n").replace(/\n{3,}/g, "\n\n").trim() + "\n";
 }
+/* conferência leve ao emitir (imprimir/copiar/Word): avisa se paciente ou data estiverem vazios; não bloqueia */
+let tAvisoEmit = null;
+function conferirIdent() {
+  const f = []; if (!ident.pac.trim()) f.push("paciente"); if (!ident.dt) f.push("data");
+  clearTimeout(tAvisoEmit);
+  if (!f.length) { avisoEmit.hidden = true; avisoEmit.textContent = ""; return; }
+  const m = "Atenção: " + f.join(" e ") + " não preenchido" + (f.length > 1 ? "s" : "") + ".";
+  avisoEmit.textContent = m; avisoEmit.hidden = false; avisoBar.textContent = m;
+  tAvisoEmit = setTimeout(() => { avisoEmit.hidden = true; }, 8000);
+}
 $("#copiar").onclick = async () => {
+  conferirIdent();
   const t = textoDoLaudo();
   let ok = false;
   try { await navigator.clipboard.writeText(t); ok = true; } catch (e) {}
@@ -1086,6 +1099,7 @@ $("#copiar").onclick = async () => {
 };
 /* exporta a folha como .doc (HTML aceito pelo Word); gerado localmente, sem enviar dados a servidores */
 $("#baixarDoc").onclick = () => {
+  conferirIdent();
   const clone = $("#sheet").cloneNode(true);
   clone.querySelectorAll(".marca").forEach(e => e.remove());
   const css = "body{font-family:Calibri,Arial,sans-serif;font-size:11pt;color:#000}table{border-collapse:collapse;width:100%}td{vertical-align:top}" +
@@ -1098,7 +1112,7 @@ $("#baixarDoc").onclick = () => {
   setTimeout(() => URL.revokeObjectURL(url), 2000);
   avisoBar.textContent = "Documento Word baixado.";
 };
-$("#imprimir").onclick = () => window.print();
+$("#imprimir").onclick = () => { conferirIdent(); window.print(); };
 addEventListener("resize", ajustarZoom);
 
 TIMBRADOS.forEach(t => { const o = el("option", null, t.nome); o.value = t.id; timb.appendChild(o); });
