@@ -90,3 +90,7 @@
 
 ## Quinta-feira (05/11/2026) — rotinas de exame
 - Lembrete técnico ampliado com posicionamento do ombro e do joelho (ESSR, PDFs lidos). Conferir ano/citação oficial das diretrizes ESSR [verificar]. Cotovelo, punho, quadril e tornozelo (PDFs ESSR) ainda não lidos: checklist por segmento segue pendente.
+
+## Domingo (08/11/2026) — busca de evidências — nada inserido no app
+- **Nervo ulnar (limiar)**: meta-análise de Chang 2017 (resumo) sustenta o corte de 10 mm² já presente no app (S 0,85 / E 0,91); Luetmer 2026 sugere cortes por idade (10,0/10,9/11,4 mm² no sulco retrocondilar) e Boers 2022/Prasetyo 2021 indicam que a posição do cotovelo altera a medida. Proposta ao Dr. Ian: manter 10 mm² e, se desejar, acrescentar nota "medir com cotovelo em posição padronizada". Aguarda decisão e confirmação de PMIDs (texto completo não lido).
+- Espaço isquiofemoral: busca bloqueada por limite de requisições; segue pendente.

@@ -149,3 +149,8 @@
 - Revisão de terminologia/ortografia no `index.html`: "hipoecogênico/hiperecogênico", "anecoico", "tendão calcâneo", "rotura", "tendinopatia" consistentes; sem "ruptura", sem palavras repetidas indevidas; "Tendinite calcária" mantida (termo corrente). Nenhuma divergência a corrigir.
 - PENDENTE_REVISAO revisado: nenhum item resolvido sem decisão do Dr. Ian.
 - Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos); Chromium headless — aviso ao emitir aparece, 0 erros de console. Nenhuma alteração em `index.html`; fontes: nenhum conteúdo clínico novo.
+
+## 08/11/2026 (domingo — busca de evidências)
+- Fila de push: patches 001 (06/11) e 002 (07/11) aplicados (001 com `git am`; documentação do 002 reaplicada manualmente, mesmo conteúdo) sobre a main (5f78aec).
+- Busca: CSA do nervo ulnar no cotovelo (Chang 2017; Fisse 2021 + errata 2024; Boers 2022; Prasetyo 2021; Luetmer 2026 — resumos lidos). O corte de 10 mm² do app é coerente com a meta-análise; PMIDs a confirmar → nenhuma alteração em `index.html`. Registrado em REFERENCIAS e PENDENTE_REVISAO. Busca do espaço isquiofemoral barrada por limite de requisições.
+- Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos); Chromium headless carrega, aviso ao emitir aparece, 0 erros de console. Nenhuma alteração em `index.html` hoje.
