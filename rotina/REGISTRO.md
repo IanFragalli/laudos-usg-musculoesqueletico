@@ -143,3 +143,9 @@
 - Novo **aviso de conferência ao emitir**: ao usar Imprimir / PDF, Copiar texto ou Baixar Word com paciente e/ou data vazios, aparece um aviso amarelo na barra (8 s) e é anunciado por leitor de tela; não bloqueia a ação. Nenhum dado sai do navegador.
 - Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos); Chromium headless 1400 e 390 px, 13 segmentos — aviso aparece com campos vazios e some com preenchidos; 0 erros de console, sem rolagem horizontal.
 - Fontes: nenhum conteúdo clínico novo (apenas funcionalidade).
+
+## 07/11/2026 (sábado — revisão)
+- Fila de push: patch 001 (06/11, aviso ao emitir) aplicado com `git am` sobre a main (5f78aec).
+- Revisão de terminologia/ortografia no `index.html`: "hipoecogênico/hiperecogênico", "anecoico", "tendão calcâneo", "rotura", "tendinopatia" consistentes; sem "ruptura", sem palavras repetidas indevidas; "Tendinite calcária" mantida (termo corrente). Nenhuma divergência a corrigir.
+- PENDENTE_REVISAO revisado: nenhum item resolvido sem decisão do Dr. Ian.
+- Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos); Chromium headless — aviso ao emitir aparece, 0 erros de console. Nenhuma alteração em `index.html`; fontes: nenhum conteúdo clínico novo.
