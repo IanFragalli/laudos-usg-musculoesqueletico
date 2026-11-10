@@ -154,3 +154,9 @@
 - Fila de push: patches 001 (06/11) e 002 (07/11) aplicados (001 com `git am`; documentação do 002 reaplicada manualmente, mesmo conteúdo) sobre a main (5f78aec).
 - Busca: CSA do nervo ulnar no cotovelo (Chang 2017; Fisse 2021 + errata 2024; Boers 2022; Prasetyo 2021; Luetmer 2026 — resumos lidos). O corte de 10 mm² do app é coerente com a meta-análise; PMIDs a confirmar → nenhuma alteração em `index.html`. Registrado em REFERENCIAS e PENDENTE_REVISAO. Busca do espaço isquiofemoral barrada por limite de requisições.
 - Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos); Chromium headless carrega, aviso ao emitir aparece, 0 erros de console. Nenhuma alteração em `index.html` hoje.
+
+## 09/11/2026 (segunda — conteúdo clínico: ombro e cotovelo)
+- Fila de push: patches 001–003 (06–08/11) aplicados sobre a main (5f78aec); o 003 foi reaplicado manualmente (mesmo conteúdo). Último push: até 05/11/2026.
+- Cotovelo: novo grupo **Nervo interósseo posterior / músculo supinador (túnel radial)** em "Outros achados", com 3 achados (neuropatia compressiva do NIP, gânglio compressivo, atrofia por desnervação do supinador/extensores). Medida opcional do diâmetro AP com comparação contralateral; sem limiar numérico.
+- Fontes (texto completo lido): Kim 2017 (PMID 28494524), Dietz 2016 (PMID 26201950). Ver REFERENCIAS e PENDENTE_REVISAO. Busca sobre nervo supraescapular (ombro): PubMed/PMC bloqueados por captcha, nada lido → nada inserido.
+- Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos); Chromium headless 1400 e 390 px — laudo normal e Cotovelo com os 3 achados marcados (relatório e impressão), 0 erros de console, sem rolagem horizontal.

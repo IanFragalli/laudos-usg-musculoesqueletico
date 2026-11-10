@@ -94,3 +94,7 @@
 ## Domingo (08/11/2026) — busca de evidências — nada inserido no app
 - **Nervo ulnar (limiar)**: meta-análise de Chang 2017 (resumo) sustenta o corte de 10 mm² já presente no app (S 0,85 / E 0,91); Luetmer 2026 sugere cortes por idade (10,0/10,9/11,4 mm² no sulco retrocondilar) e Boers 2022/Prasetyo 2021 indicam que a posição do cotovelo altera a medida. Proposta ao Dr. Ian: manter 10 mm² e, se desejar, acrescentar nota "medir com cotovelo em posição padronizada". Aguarda decisão e confirmação de PMIDs (texto completo não lido).
 - Espaço isquiofemoral: busca bloqueada por limite de requisições; segue pendente.
+
+## Segunda-feira (09/11/2026) — cotovelo: nervo interósseo posterior
+- Inseridos 3 achados em grupo novo "Nervo interósseo posterior / músculo supinador (túnel radial)" (Kim 2017, PMID 28494524; Dietz 2016, PMID 26201950). Validar a redação com o Dr. Ian. Sem valor de corte: as fontes não o definem (diâmetro AP 1,79 vs 1,02 mm contralateral em série de 10 casos) — por isso a medida é opcional e comparativa com o lado contralateral. Aspecto em "ampulheta" não foi inserido (só citado de outro estudo, não lido). Atrofia do supinador à US baseia-se em 2 casos de Kim 2017.
+- Os achados ficam em "Outros achados" (sem linha própria no modelo normal) para não afirmar exame normal do NIP quando não avaliado. Decidir se deseja uma linha de "NIP/supinador sem alterações" no modelo.

@@ -24,7 +24,7 @@
 - [~] Área de secção transversal de referência para o ramo superficial do radial / nervos distais do punho — fonte encontrada em 25/10 (Bae 2021, PMID 33950986; proximal, população coreana); aguardando decisão do Dr. Ian (ver PENDENTE_REVISAO)
 - [ ] Rodar `node rotina/verificar_integridade.js` antes de cada commit clínico (novo, 24/10)
 - [~] Ombro: achado "Rotura do subescapular (Lafosse)" — evidência de resumos adicionada em 02/11 (sensibilidade da US 39–78%); falta texto completo, PMIDs e decisão do Dr. Ian (novo, 26/10)
-- [ ] Cotovelo: síndrome do túnel radial / nervo interósseo posterior — avaliar fonte US (achados iniciais de busca em 26/10, não lidos) (novo, 26/10)
+- [x] (09/11/2026) Cotovelo: túnel radial / NIP — 3 achados inseridos (Kim 2017, PMID 28494524; Dietz 2016, PMID 26201950); validar redação com o Dr. Ian; sem limiar numérico (fontes não definem)
 - [x] (27/10/2026) Quadril: achado "Aumento do músculo piriforme" (Zhang 2019, PMID 30663080) — validar redação com o Dr. Ian
 - [ ] Punho: tendinopatia/entesopatia e tendinite calcária do FCU no pisiforme — confirmar PMIDs (Wick 2011; Ahuja 2021, DOI 10.1055/s-0041-1736397) e ler texto completo (novo, 27/10)
 - [ ] Quadril: impacto isquiofemoral — obter texto completo de Wu 2022 (PMID 36611431) e valores de corte do espaço isquiofemoral (novo, 27/10)
