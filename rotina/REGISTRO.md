@@ -137,3 +137,9 @@
 - Fila de push: patches 001 (03/11) e 002 (04/11) aplicados com `git am` sobre a main (4a95dee).
 - Lembrete técnico: 2 itens novos (posicionamento do ombro; posicionamento do joelho/estresse em valgo) a partir dos PDFs ESSR de ombro e joelho (lidos). Fonte em REFERENCIAS; citação oficial a verificar.
 - Testes: `verificar_integridade.js` OK; Chromium headless — lembrete aberto com os novos itens, 0 erros de console.
+
+## 06/11/2026 (sexta — funcionalidades)
+- Fila de push: patches 001–003 (03–05/11) já estavam contidos na main (5f78aec); nada a reaplicar. Fila do Projeto zerada.
+- Novo **aviso de conferência ao emitir**: ao usar Imprimir / PDF, Copiar texto ou Baixar Word com paciente e/ou data vazios, aparece um aviso amarelo na barra (8 s) e é anunciado por leitor de tela; não bloqueia a ação. Nenhum dado sai do navegador.
+- Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos); Chromium headless 1400 e 390 px, 13 segmentos — aviso aparece com campos vazios e some com preenchidos; 0 erros de console, sem rolagem horizontal.
+- Fontes: nenhum conteúdo clínico novo (apenas funcionalidade).

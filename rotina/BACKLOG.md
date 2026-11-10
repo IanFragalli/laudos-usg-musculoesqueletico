@@ -33,5 +33,6 @@
 - [x] (30/10/2026) Botão "Copiar texto" (laudo em texto simples) e "Novo paciente" (limpa identificação)
 - [x] (30/10/2026) Exportar laudo em Word: botão "Baixar Word" gera .doc (HTML aceito pelo Word) offline, com cabeçalho do serviço. Falta validar a aparência no Word do Dr. Ian e, se desejado, .docx nativo
 - [x] (30/10/2026) Atalhos Alt+Shift+C/W/N (copiar, Word, novo paciente)
+- [x] (06/11/2026) Aviso ao emitir laudo sem paciente/data (imprimir, copiar, Word)
 - [ ] Revisar impressão em papel (A4) com um laudo longo real — validar quebra de página e timbrado (Dr. Ian)
 - [x] (04/11/2026) Perna/Panturrilha: achado 'Coleção interaponeurótica gastrocnêmio-sóleo' (Delgado 2002, PMID 12091669) — validar redação com o Dr. Ian
