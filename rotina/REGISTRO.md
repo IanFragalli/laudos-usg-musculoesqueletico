@@ -165,3 +165,9 @@
 - Fila de push: patches 001–004 (06–09/11) reaplicados sobre a main (5f78aec); o último push foi até 05/11/2026. A reconstrução dos patches 001–003 gerou a mesma árvore (hash do `index.html` idêntico ao dos patches).
 - Novo achado **Espaço isquiofemoral reduzido** (Quadril, face posterior, "Outros achados", com `dx`; medida em branco, sem limiar diagnóstico). Fonte: Wu 2022 (Diagnostics, PMID 36611431; texto completo lido via PMC9818255). Cortes numéricos (RM 15/10 mm; US 2,14 cm) não inseridos [verificar].
 - Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos); Chromium headless 1400 e 390 px — Quadril normal e com o achado marcado (texto e impressão), 0 erros de console, sem rolagem horizontal.
+
+## 11/11/2026 (quarta — conteúdo clínico: joelho, perna/panturrilha, tornozelo/pé)
+- Fila de push: os 5 patches (06–10/11) já estavam contidos na main (4a96a32; o patch 005 reverte limpo sobre a main). Nada a reaplicar; fila do Projeto zerada. Último push: 10/11/2026.
+- Novo achado **Tendinopatia calcária do poplíteo** (Joelho, grupo "Tendão poplíteo (canto posterolateral)", "Outros achados", com `dx` e impressão; medida opcional, sem limiar). Fonte: Doucet 2017 (Skeletal Radiol, PMID 28303297; relato de caso, resumo lido) — evidência fraca, marcado para validação do Dr. Ian.
+- Não inserido: tendão plantar e variantes anatômicas (sem critérios US descritivos).
+- Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos); Chromium headless 1400 e 390 px — Joelho com o achado marcado (texto e impressão), 0 erros de console, sem rolagem horizontal.

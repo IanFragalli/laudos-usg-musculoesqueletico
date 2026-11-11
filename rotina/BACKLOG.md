@@ -36,3 +36,5 @@
 - [x] (06/11/2026) Aviso ao emitir laudo sem paciente/data (imprimir, copiar, Word)
 - [ ] Revisar impressão em papel (A4) com um laudo longo real — validar quebra de página e timbrado (Dr. Ian)
 - [x] (04/11/2026) Perna/Panturrilha: achado 'Coleção interaponeurótica gastrocnêmio-sóleo' (Delgado 2002, PMID 12091669) — validar redação com o Dr. Ian
+- [x] (11/11/2026) Joelho: achado "Tendinopatia calcária do poplíteo" (Doucet 2017, PMID 28303297; relato de caso, só resumo lido) — validar redação/manter com o Dr. Ian
+- [ ] Tendão plantar (tendinopatia/rotura) e variantes do poplíteo: aguardar fonte com critérios US descritivos (novo, 11/11)
