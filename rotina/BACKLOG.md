@@ -1,6 +1,6 @@
 # Backlog (prioridade de cima para baixo)
 - [x] (16/10/2026) Auditar `index.html`: mapear segmentos, estruturas, campos e frases existentes (gerar `docs/MAPA_DO_APP.md`)
-- [~] Checklist de varredura padrão por segmento (rotina de exame) — lembrete técnico genérico feito em 29/10; checklist por segmento aguarda texto completo ESSR/protocolo do Dr. Ian; 05/11: posicionamento de ombro e joelho (ESSR) no lembrete; faltam cotovelo, punho, quadril, tornozelo
+- [~] Checklist de varredura padrão por segmento (rotina de exame) — lembrete técnico genérico feito em 29/10; checklist por segmento aguarda texto completo ESSR/protocolo do Dr. Ian; 05/11: posicionamento de ombro e joelho (ESSR) no lembrete; 12/11: cotovelo (ESSR) no lembrete; faltam punho, quadril, tornozelo
 - [ ] Impressão diagnóstica automática coerente com os achados marcados
 - [ ] Classificações usuais por estrutura (ex.: manguito rotador, tendinopatias, meniscos, ligamentos)
 - [x] (16/10/2026) Campo de comparação com exame anterior

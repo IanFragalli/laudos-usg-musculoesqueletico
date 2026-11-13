@@ -108,3 +108,6 @@
 - **Inserido (Joelho, grupo "Tendão poplíteo (canto posterolateral)", em "Outros achados"): "Tendinopatia calcária do poplíteo"** — texto descritivo (tendão espessado/hipoecogênico junto à origem femoral, focos hiperecogênicos, hiperemia periférica ao Doppler), medida opcional da calcificação em branco, sem limiar. Fonte: Doucet 2017 (PMID 28303297), **relato de caso único, apenas o resumo foi lido** (sem texto completo). Evidência fraca: Dr. Ian deve decidir se mantém o achado, e validar a redação (inclusive "origem no côndilo femoral lateral" e a recomendação de radiografia/RM) [verificar].
 - Não há linha própria do poplíteo no modelo normal (para não afirmar exame normal quando não avaliado). Decidir se deseja incluir.
 - **Não inserido**: tendinopatia/rotura do plantar (Alfredson 2024; Moeda 2025 — relatos/séries sem critérios US descritivos); variantes anatômicas do poplíteo/plantar (Olewnik 2026 — revisões anatômicas).
+
+## 12/11/2026 — Lembrete técnico do cotovelo (ESSR)
+- Dois itens novos no lembrete técnico (posicionamento do cotovelo; ulnar dinâmico/estresse em valgo do LCU), baseados no PDF ESSR do cotovelo (texto extraído ruidoso). Conferir redação e citação oficial [verificar]. Punho/mão, quadril e tornozelo seguem sem texto ESSR lido.

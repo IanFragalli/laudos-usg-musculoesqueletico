@@ -171,3 +171,8 @@
 - Novo achado **Tendinopatia calcária do poplíteo** (Joelho, grupo "Tendão poplíteo (canto posterolateral)", "Outros achados", com `dx` e impressão; medida opcional, sem limiar). Fonte: Doucet 2017 (Skeletal Radiol, PMID 28303297; relato de caso, resumo lido) — evidência fraca, marcado para validação do Dr. Ian.
 - Não inserido: tendão plantar e variantes anatômicas (sem critérios US descritivos).
 - Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos); Chromium headless 1400 e 390 px — Joelho com o achado marcado (texto e impressão), 0 erros de console, sem rolagem horizontal.
+
+## 12/11/2026 (quinta — rotinas de exame)
+- Fila de push: patch 001 (11/11, poplíteo) aplicado com `git am` sobre a main (4a96a32). Último push: até 10/11/2026.
+- Lembrete técnico: 2 itens novos do cotovelo (posicionamento anterior/posterior; nervo ulnar dinâmico em flexão com mínima pressão e estresse em valgo do LCU), a partir do PDF ESSR do cotovelo (lido). Fonte em REFERENCIAS; citação oficial a verificar. ESSR de punho/mão não acessível (erro) — nada inserido.
+- Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos); Chromium headless 1400 e 390 px, Cotovelo — lembrete exibe os itens, relatório gera, 0 erros de console, sem rolagem horizontal.
