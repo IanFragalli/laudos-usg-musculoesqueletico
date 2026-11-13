@@ -38,3 +38,5 @@
 - [x] (04/11/2026) Perna/Panturrilha: achado 'Coleção interaponeurótica gastrocnêmio-sóleo' (Delgado 2002, PMID 12091669) — validar redação com o Dr. Ian
 - [x] (11/11/2026) Joelho: achado "Tendinopatia calcária do poplíteo" (Doucet 2017, PMID 28303297; relato de caso, só resumo lido) — validar redação/manter com o Dr. Ian
 - [ ] Tendão plantar (tendinopatia/rotura) e variantes do poplíteo: aguardar fonte com critérios US descritivos (novo, 11/11)
+- [x] (13/11/2026) Atalho Alt+Shift+P para Imprimir / PDF (junto de C/W/N)
+- [ ] Opção de lateralidade "bilateral": avaliada em 13/11 e NÃO feita — os achados são de um lado só; título 'bilateral' com um único conjunto de achados seria ambíguo. Requer decisão de desenho do Dr. Ian (achados por lado)

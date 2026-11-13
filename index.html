@@ -301,7 +301,7 @@ mark.hit{background:#FFF3C4;color:inherit;border-radius:2px;padding:0 1px}
     <button class="btn" id="baixarDoc" type="button" aria-keyshortcuts="Alt+Shift+W" title="Baixa o laudo como documento do Word (.doc), gerado no próprio navegador [Alt+Shift+W]">Baixar Word</button>
     <span class="sr" id="avisoBar" role="status" aria-live="polite"></span>
     <span class="aviso-emit" id="avisoEmit" hidden></span>
-    <button class="btn primary" id="imprimir" type="button">Imprimir / PDF</button>
+    <button class="btn primary" id="imprimir" type="button" aria-keyshortcuts="Alt+Shift+P" title="Imprime ou salva em PDF [Alt+Shift+P]">Imprimir / PDF</button>
   </div>
 </header>
 
@@ -979,8 +979,8 @@ addEventListener("keydown", e => {
     e.preventDefault(); busca.focus(); busca.select();
   }
 });
-/* atalhos da barra (Alt+Shift+C copiar, W Word, N novo paciente); usa e.code para independer do teclado/Option do Mac */
-const ATALHOS = { KeyC: "#copiar", KeyW: "#baixarDoc", KeyN: "#novoPac" };
+/* atalhos da barra (Alt+Shift+C copiar, W Word, N novo paciente, P imprimir/PDF); usa e.code para independer do teclado/Option do Mac */
+const ATALHOS = { KeyC: "#copiar", KeyW: "#baixarDoc", KeyN: "#novoPac", KeyP: "#imprimir" };
 addEventListener("keydown", e => {
   if (!(e.altKey && e.shiftKey) || e.ctrlKey || e.metaKey || !ATALHOS[e.code]) return;
   e.preventDefault(); $(ATALHOS[e.code]).click();

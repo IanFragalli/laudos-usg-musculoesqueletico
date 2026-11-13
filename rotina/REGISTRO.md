@@ -176,3 +176,9 @@
 - Fila de push: patch 001 (11/11, poplíteo) aplicado com `git am` sobre a main (4a96a32). Último push: até 10/11/2026.
 - Lembrete técnico: 2 itens novos do cotovelo (posicionamento anterior/posterior; nervo ulnar dinâmico em flexão com mínima pressão e estresse em valgo do LCU), a partir do PDF ESSR do cotovelo (lido). Fonte em REFERENCIAS; citação oficial a verificar. ESSR de punho/mão não acessível (erro) — nada inserido.
 - Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos); Chromium headless 1400 e 390 px, Cotovelo — lembrete exibe os itens, relatório gera, 0 erros de console, sem rolagem horizontal.
+
+## 13/11/2026 (sexta — funcionalidades)
+- Fila de push: patches 001 (11/11) e 002 (12/11) aplicados sobre a main (4a96a32); o 002 foi reaplicado manualmente (mesmo conteúdo). Último push: 10/11/2026.
+- Novo atalho **Alt+Shift+P** (Imprimir / PDF), com `aria-keyshortcuts` e dica no botão. Sem conteúdo clínico novo.
+- Lateralidade "bilateral" avaliada e não implementada: o laudo tem um único conjunto de achados; título bilateral seria ambíguo (ver BACKLOG).
+- Testes: `verificar_integridade.js` OK (13 segmentos, 39 catálogos); Chromium headless — atalho dispara a impressão (1 chamada), 0 erros de console.
